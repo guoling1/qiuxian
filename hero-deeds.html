@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>邱县干部日常考核平台</title>
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/pagination.css">
+    <link rel="stylesheet" href="css/swiper-4.3.3.min.css">
+    <link rel="stylesheet" href="css/public.css">
+    <link rel="stylesheet" href="css/memorial-personal.css">
+</head>
+<body>
+<div class="headerPage"></div>
+<!--<div class="banner-box">
+    <div class="banner-swiper swiper-container">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide"><img src="images/memorial-banner.png" alt=""></div>
+        </div>
+    </div>
+</div>-->
+<div class="nav">
+    <ul id="left-menu">
+        <!--<li>-->
+            <!--<a href="">-->
+                <!--<p>文物馆藏</p>-->
+                <!--<p>MUSEUM</p>-->
+            <!--</a>-->
+        <!--</li>-->
+        <!--<li class="active">-->
+            <!--<a href="">-->
+                <!--<p>英烈事迹</p>-->
+                <!--<p>HERO DEEDS</p>-->
+            <!--</a>-->
+        <!--</li>-->
+        <!--<li>-->
+            <!--<a href="">-->
+                <!--<p>学术研究</p>-->
+                <!--<p>RESEARCH</p>-->
+            <!--</a>-->
+        <!--</li>-->
+    </ul>
+</div>
+<div class="bread">首页 &gt; 烈士事迹</div>
+<ul class="peoples">
+    <li>
+        <a href="hero-deeds-detail.html">
+            <img src="images/people.png" alt="">
+            <p class="name">左权</p>
+            <p class="year">1905-1942</p>
+        </a>
+    </li>
+    <li>
+        <a href="mpDetail.html">
+            <img src="images/people.png" alt="">
+            <p class="name">左权</p>
+            <p class="year">1905-1942</p>
+        </a>
+    </li>
+    <li>
+        <a href="javascript:;">
+            <img src="images/people.png" alt="">
+            <p class="name">左权</p>
+            <p class="year">1905-1942</p>
+        </a>
+    </li>
+    <li>
+        <a href="javascript:;">
+            <img src="images/people.png" alt="">
+            <p class="name">左权</p>
+            <p class="year">1905-1942</p>
+        </a>
+    </li>
+    <li>
+        <a href="javascript:;">
+            <img src="images/people.png" alt="">
+            <p class="name">左权</p>
+            <p class="year">1905-1942</p>
+        </a>
+    </li>
+    <li>
+        <a href="javascript:;">
+            <img src="images/people.png" alt="">
+            <p class="name">左权</p>
+            <p class="year">1905-1942</p>
+        </a>
+    </li>
+    <li>
+        <a href="javascript:;">
+            <img src="images/people.png" alt="">
+            <p class="name">左权</p>
+            <p class="year">1905-1942</p>
+        </a>
+    </li>
+    <li>
+        <a href="javascript:;">
+            <img src="images/people.png" alt="">
+            <p class="name">左权</p>
+            <p class="year">1905-1942</p>
+        </a>
+    </li>
+</ul>
+<div id="page"></div>
+
+<div class="footerPage"></div>
+<script src="js/rem.js"></script>
+<script src="js/jquery-3.3.1.min.js"></script>
+<script src="js/swiper-4.3.3.min.js"></script>
+<script src="js/pagination.js"></script>
+<script src="js/public.js"></script>
+<script>
+    leftMenu();
+    //获取当前页码
+    var current;
+    var pageSize = 10;
+    //请求当前页要展示的数据
+    $.ajax({
+        type: "POST",
+        dataType: "json",
+        url: GLOBEL_URl,
+        data: {
+            oper: 'getContentList',
+            typeid: $.Request('id'),
+            pageSize: pageSize,
+            pageIndex: 1
+        },
+        success: function (data) {
+            current = data.recordCount;
+            var arr = [];
+            for (var i = 0; i < current; i++) {
+                arr.push(i)
+            }
+            $('#page').pagination({
+                dataSource: arr,
+                pageSize: pageSize,
+                prevText: '<上一页',
+                nextText: '下一页>',
+                callback: function () {
+                    $.ajax({
+                        type: "POST",
+                        dataType: "json",
+                        url: GLOBEL_URl,
+                        data: {
+                            oper: 'getContentList',
+                            typeid: $.Request('id'),
+                            pageSize: pageSize,
+                            pageIndex: arguments[1].pageNumber
+                        },
+                        success: function (data) {
+                            var aLi = '';
+                            $(data.data).each(function (ind, item) {
+                                aLi += `
+                                        <li>
+                                            <a href="hero-deeds-detail.html?ContentId=`+item.ContentId+`&ParentId=`+$.Request('ParentId')+`&id=`+$.Request('id')+`">
+                                                <img src="`+GLOBEL_IP+item.ImgUrl+`" alt="">
+                                                <p class="name">`+item.Title+`</p>
+                                                <p class="year"></p>
+                                            </a>
+                                        </li>
+                                `
+                            })
+                            $('.peoples').html(aLi)
+                            if($.Request('name')=='纪念建筑'){
+                                $('.img').css('height','1.9rem')
+                            }
+                        }
+                    })
+                }
+            });
+        }
+    })
+</script>
+</body>
+</html>

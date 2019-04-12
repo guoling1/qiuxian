@@ -1,0 +1,48 @@
+.title{
+    padding: 0.46rem 0.3rem 0;
+    text-align: center;
+}
+.title span{
+    position: relative;
+    display: inline-block;
+    padding: 0 0 0.24rem;
+    font-size: 0.32rem;
+    font-weight: bold;
+    color: #000;
+    border-bottom: 1px solid #d8d8d8;
+}
+.title span .time{
+    color: #666666;
+    font-size: 0.20rem;
+    font-style: italic;
+}
+.title .audio{
+    margin: 20px 0;
+    color: #999;
+    text-align: center;
+}
+.title i{
+    position: absolute;
+    bottom: -1px;
+    left: 35%;
+    display: inline-block;
+    width: 30%;
+    height: 1px;
+    background: #000;
+}
+.con{
+    padding: 0 0.3rem;
+}
+.con p{
+    line-height: 0.48rem;
+}
+.con .avatar{
+    width: 2.68rem;
+    height: 3.2rem;
+    margin: 0 auto 0.36rem;
+}
+.con p .name{
+    font-size: 0.3rem;
+    font-weight: bold;
+    color: #000;
+}

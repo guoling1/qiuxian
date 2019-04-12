@@ -1,0 +1,43 @@
+.tab{
+    display: flex;
+    justify-content: space-evenly;
+    padding: 0.21rem 0;
+    width: 7.3rem;
+    margin: 0.22rem auto;
+    border-radius: 0.2rem;
+    box-shadow: 0 0 10px #f4dbdb;
+}
+.tab a{
+    width: 28.5%;
+}
+.tab a img{
+    width: 100%;
+    height: auto;
+}
+.peoples{
+    padding: 0.45rem 0.3rem;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+.peoples li{
+    margin-bottom: 0.38rem;
+    width: 2.7rem;
+    text-align: center;
+    border-bottom: 1px solid #d1d1d1;
+}
+.peoples li img{
+    width: 100%;
+    /*height: auto;*/
+    height: 3.6rem;
+}
+.peoples li .name{
+    margin: 0.3rem 0 0.1rem;
+    color: #000;
+    font-weight: bold;
+}
+.peoples li .year{
+    margin-bottom: 0.26rem;
+    color: #666;
+    font-style: italic;
+}

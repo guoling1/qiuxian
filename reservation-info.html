@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>邱县干部日常考核平台</title>
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/swiper-4.3.3.min.css">
+    <link rel="stylesheet" href="css/public.css">
+    <link rel="stylesheet" href="css/reservation.css">
+</head>
+<body>
+<div class="headerPage"></div>
+<!--<div class="banner-box">
+    <div class="banner-swiper swiper-container">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide"><img src="images/introduce-banner.png" alt=""></div>
+        </div>
+    </div>
+</div>-->
+<div class="nav">
+    <ul id="left-menu">
+        <!--<li>-->
+            <!--<a href="reservation.html">-->
+                <!--<p>预约须知</p>-->
+                <!--<p>NOTICE</p>-->
+            <!--</a>-->
+        <!--</li>-->
+        <!--<li class="active">-->
+            <!--<a href="reservation-info.html">-->
+                <!--<p>预约信息</p>-->
+                <!--<p>INFORMATION</p>-->
+            <!--</a>-->
+        <!--</li>-->
+    </ul>
+</div>
+<div class="bread">首页 &gt; 预约信息</div>
+<div class="content clearfix">
+    <div class="title"><span>预约信息<i></i></span></div>
+    <div class="form">
+        <div class="list">
+            <p>单位名称：</p>
+            <div class="right">
+                <input type="text" id="unitName">
+            </div>
+        </div>
+        <div class="list date">
+            <p>参观日期：</p>
+            <div class="right" style="text-align: left">
+                <input type="date" id="datepicker">
+                <!--<i></i>-->
+            </div>
+        </div>
+        <div class="list">
+            <p>预约人数：</p>
+            <div class="right">
+                <input type="number" id="bookNum">
+            </div>
+        </div>
+        <div class="list">
+            <p>团队类型：</p>
+            <div class="right">
+                <select id="type">
+                    <option value="成人">成人</option>
+                    <option value="中小学生">中小学生</option>
+                    <option value="大学生">大学生</option>
+                    <option value="党员">党员</option>
+                    <option value="部队">部队</option>
+                </select>
+            </div>
+        </div>
+        <div class="list">
+            <p>联系人：</p>
+            <div class="right">
+                <input type="text" id="linkMan">
+            </div>
+        </div>
+        <div class="list">
+            <p>联系电话：</p>
+            <div class="right">
+                <input type="text" id="LinkTel">
+            </div>
+        </div>
+        <div class="list code">
+            <p>验证码：</p>
+            <div class="right">
+                <input type="text" class="codeInp" id="input" name="messageCode">
+                <span id="imgCode"></span>
+            </div>
+        </div>
+        <button class="submit">提交</button>
+    </div>
+</div>
+
+<div class="footerPage"></div>
+<script src="js/rem.js"></script>
+<script src="js/jquery-3.3.1.min.js"></script>
+<script src="js/swiper-4.3.3.min.js"></script>
+<script src="js/public.js"></script>
+<script src="js/reservation-info.js"></script>
+<script>
+    leftMenu()
+</script>
+</body>
+</html>

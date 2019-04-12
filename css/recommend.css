@@ -1,0 +1,64 @@
+.column-title{
+    line-height: 0.66rem;
+    background: #015293;
+    color: #fff;
+}
+.column-title .left{
+    font-weight: 900;
+    margin-left: 0.3rem;
+}
+.column-title .right{
+    margin-right: 0.3rem;
+    color: #fff;
+}
+.form{
+    margin: 0 auto;
+    width: 6.9rem;
+    font-weight: bold;
+}
+.form .list{
+    margin-top: 0.2rem;
+}
+.form p{
+    line-height: 0.9rem;
+    font-size: 0.32rem;
+    font-weight: 900;
+}
+.form .right{
+
+}
+.form input,.form textarea{
+    padding: 0 0.4rem;
+    height: 0.74rem;
+    line-height: 0.74rem;
+    width: 6.1rem;
+    border-bottom: 1px solid #d2d2d2;
+}
+.form textarea{
+    height: 1.95rem;
+    border: 1px solid #d2d2d2;
+    border-radius: 0.05rem;
+}
+.form select{
+    display: inherit;
+    padding: 0 0.4rem;
+    width: 4.3rem;
+    height: 0.74rem;
+    line-height: 0.74rem;
+    border: 1px solid #d2d2d2;
+    border-radius: 0.05rem;
+    margin: 0 auto 0.45rem;
+}
+.form .tips{
+    line-height: 0.6rem;
+    color: #7d0000;
+}
+.form button{
+    display: inherit;
+    margin: 0.38rem auto;
+    width: 2.08rem;
+    line-height: 0.56rem;
+    background: #015293;
+    border-radius: 3px;
+    color: #fff;
+}

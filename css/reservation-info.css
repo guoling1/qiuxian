@@ -1,0 +1,153 @@
+.main{
+    position: relative;
+    box-shadow: 0 0 10px #a09f9f;
+    margin: 30px auto 0;
+    width: 1400px;
+    border-top: 4px solid #980c21;
+    border-bottom: 4px solid #980c21;
+    border-radius: 5px;
+    background: #fff;
+}
+.main .box-nav{
+    position: absolute;
+    top: -40px;
+    width: 24.5%;
+
+}
+.main .box-nav .lf-center,.main .box-nav ul{
+    float: right;
+    width: 90%;
+    background: #f7f7f7;
+}
+.main .box-nav .lf-center{
+    text-align: center;
+}
+.main .box-nav .lf-center img{
+    text-align: center;
+    padding: 35px 0;
+
+}
+.main .box-nav ul{
+    padding-bottom: 20px;
+}
+.main .box-nav ul li{
+    position: relative;
+    height: 57px;
+    line-height: 57px;
+}
+.main .box-nav ul li.active{
+    background: #980c21;
+    /*background: url("../images/intro-lf.png") no-repeat;*/
+}
+.main .box-nav ul li.active i{
+    position: absolute;
+    left: -20px;
+    bottom: 0;
+    width: 20px;
+    height: 68px;
+    background: #980c21;
+    background: url("../images/intro-lf.png") no-repeat;
+    background-size: 100%;
+}
+.main .box-nav ul li a{
+    font-size: 18px;
+    color: #666;
+}
+.main .box-nav ul li.active a{
+    color: #fff;
+}
+.main .box-nav ul li a span{
+    margin: 0 20px 0 65px;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.main .box-rt{
+    padding: 40px 46px 100px;
+    width: 75.5%;
+}
+.main .box-rt .bread,.main .box-rt .bread a{
+    font-size: 16px;
+    font-weight: bold;
+    color: #980c21;
+}
+.box-rt .title{
+    text-align: center;
+}
+.box-rt .title span{
+    position: relative;
+    display: inline-block;
+    padding: 0 10px 27px;
+    font-size: 20px;
+    color: #000;
+    border-bottom: 1px solid #d8d8d8;
+}
+.box-rt .title i{
+    position: absolute;
+    bottom: -1px;
+    left: 35%;
+    display: inline-block;
+    width: 30%;
+    height: 1px;
+    background: #000;
+}
+.reserve{
+    margin: 0 auto;
+}
+.reserve form{
+    padding-top: 47px;
+    width: 60%;
+    margin: 0 auto;
+    text-align: center;
+    font-size: 16px;
+    color: #666;
+}
+.reserve form .list{
+    margin-bottom: 36px;
+}
+.reserve form p{
+    float: left;
+    width: 88px;
+    line-height: 44px;
+}
+.reserve form .right{
+    position: relative;
+    margin-left: 88px;
+}
+.reserve form input,.reserve form select{
+    height: 44px;
+    line-height: 44px;
+    width: 100%;
+    background: #f1f1f1;
+    border: none;
+    border: 1px solid #c4c4c4;
+}
+.reserve form .date .right i{
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    height: 22px;
+    width: 24px;
+    background: url("../images/date.png") no-repeat;
+    background-size: 100% 100%;
+}
+.reserve form .code .right{
+    text-align: left;
+}
+.reserve form .code .codeInp{
+    width: 160px;
+}
+.reserve form .code input[type=button]{
+    width: 160px;
+    background: #b50000;
+    border-radius: 3px;
+    color: #fff;
+}
+.reserve button{
+    margin-top: 50px;
+    width: 135px;
+    line-height: 36px;
+    background: #b50000;
+    border-radius: 3px;
+    color: #fff;
+}

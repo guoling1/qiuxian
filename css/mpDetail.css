@@ -1,0 +1,186 @@
+.tab{
+    display: flex;
+    justify-content: space-evenly;
+    padding: 0.21rem 0;
+    width: 7.3rem;
+    margin: 0.22rem auto;
+    border-radius: 0.2rem;
+    box-shadow: 0 0 10px #f4dbdb;
+}
+.tab a{
+    width: 28.5%;
+}
+.tab a img{
+    width: 100%;
+    height: auto;
+}
+.people{
+    padding: 0.45rem 0;
+}
+.people .top {
+    position: relative;
+}
+
+.people .top img {
+    width: 100%;
+    height: auto;
+}
+
+.people .top .tip {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    /*padding: 17.5% 1%;*/
+    width: 22%;
+    height: 14.8%;
+    text-align: center;
+    background: rgba(255, 255, 255, 0.5);
+}
+
+.people .top span{
+    display: inline-block;
+    margin-top: 7%;
+    width: 80%;
+    height: 60%;
+    background: #fff;
+}
+.people .top span.pub{
+    background: #7d0000ad;
+}
+
+.people .top span img {
+    display: inline-block;
+    width: 70%;
+    height: auto;
+    margin-top: 6%;
+}
+.people .people-data{
+    padding: 0 0.3rem 0.3rem;
+    margin: 0.43rem 0 0.32rem;
+    border-bottom: 0.2rem solid #f1f1f1;
+}
+.people .people-data .data-fl{
+    margin: 0 auto;
+    width: 1.82rem;
+    height: auto;
+}
+.people .people-data .data-fl img{
+    width: 100%;
+    height: auto;
+}
+.people .people-data .data-fr{
+    margin-top: 0.46rem;
+    line-height: 0.46rem;
+    color: #333;
+}
+.people .people-data .data-fr .name{
+    font-size: 0.3rem;
+    color: #000;
+    font-weight: bold;
+}
+.message-title{
+    text-align: center;
+}
+.message-title span{
+    position: relative;
+    display: inline-block;
+    /*padding: 0 10px 27px;*/
+    padding-bottom: 0.14rem;
+    font-size: 0.32rem;
+    color: #000;
+    border-bottom: 1px solid #d8d8d8;
+}
+.message-title span i{
+    position: absolute;
+    bottom: 0;
+    left: 35%;
+    display: inline-block;
+    width: 30%;
+    height: 1px;
+    background: #000;
+}
+.message .message-ul{
+    padding: 0 0.3rem 0.5rem;
+    /*border-bottom: 0.2rem solid #f1f1f1;*/
+}
+.message .message-ul li{
+    padding-top: 0.28rem;
+    border-bottom: 1px dashed #7d0000;
+}
+.message .message-ul li .name{
+    margin-bottom: 0.26rem;
+    color: #000;
+    font-size: 0.3rem;
+    font-weight: bold;
+}
+.message .message-ul li .time{
+    margin-bottom: 0.22rem;
+}
+.message .message-ul li .detail{
+    margin-bottom: 0.22rem;
+    color: #666666;
+}
+
+.comment{
+    padding-top: 0.34rem;
+}
+.comment .form{
+    padding-top: 0.34rem;
+    width: 90%;
+    margin: 0 auto;
+    text-align: center;
+    color: #666;
+}
+.comment .form .list{
+    margin-bottom: 0.34rem;
+}
+.comment .form p{
+    float: left;
+    width: 1.5rem;
+    line-height: 0.54rem;
+}
+.comment .form .right{
+    margin-left: 1.5rem;
+    text-align: left;
+}
+.comment .form input,.comment .form textarea{
+    height: 0.54rem;
+    line-height: 0.54rem;
+    width: 95%;
+    background: #f1f1f1;
+    border: 1px solid #c4c4c4;
+    /*border: none;*/
+}
+.comment .form textarea{
+    height: 1.55rem;
+}
+.comment .form .code .right{
+    text-align: left;
+}
+.comment .form .code .codeInp{
+    width: 57%;
+}
+.comment .form .code input[type=button]{
+    margin-right: 5%;
+    width: 1.5rem;
+    background: #b50000;
+    border-radius: 3px;
+    color: #fff;
+}
+.form .code canvas {
+    vertical-align: top;
+}
+.comment button{
+    margin: 0.1rem 0 0.7rem;
+    width: 2.08rem;
+    line-height: 0.58rem;
+    background: #b50000;
+    border-radius: 3px;
+    color: #fff;
+}
+.message{
+    margin-top: 20px;
+    background: #fff;
+    border-bottom: 0.2rem solid #f1f1f1;
+    padding-bottom: 0.5rem;
+}

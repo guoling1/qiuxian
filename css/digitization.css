@@ -1,0 +1,190 @@
+.content{
+    padding: 0.3rem;
+}
+.content .title{
+    text-align: center;
+    font-size: 0.32rem;
+    color: #000;
+}
+.content .title span{
+    position: relative;
+    display: inline-block;
+    /*padding: 0 10px 27px;*/
+    padding-bottom: 0.14rem;
+    font-size: 0.32rem;
+    color: #000;
+    border-bottom: 1px solid #d8d8d8;
+}
+.audio{
+    margin: 20px 0;
+    color: #999;
+    text-align: center;
+}
+.content .title span i{
+    position: absolute;
+    bottom: 0;
+    left: 35%;
+    display: inline-block;
+    width: 30%;
+    height: 1px;
+    background: #000;
+}
+.content .map{
+    padding: 0.78rem 0 0.6rem;
+    width: 100%;
+}
+.content .contact{
+    padding-top: 0.3rem;
+    margin: 0 auto;
+    width: 95%;
+    border-radius: 0.1rem;
+    border-left: 0.02rem solid #b50000;
+    box-shadow: 0 5px 10px #d7d7d7;
+}
+.contact li{
+    padding-bottom: 0.3rem;
+    color: #262626;
+}
+.content .contact img{
+    margin: 0 0.28rem;
+    width: 0.14rem;
+    height: auto;
+}
+.content .contact .detail{
+    margin-left: 1.9rem;
+    display: block;
+}
+.route{
+    padding-top: 0.8rem;
+    text-align: left;
+    line-height: 0.38rem;
+}
+.route .route_title{
+    font-weight: bold;
+    font-size: 0.28rem;
+}
+.route ul{
+    margin-top: 0.3rem;
+    display: inline-block;
+    width: 45%;
+}
+.route ul span{
+    font-weight: bold;
+}
+.form{
+    padding-top: 0.4rem;
+    width: 90%;
+    margin: 0 auto;
+    text-align: center;
+    color: #666;
+}
+.form .list{
+    margin-bottom: 0.36rem;
+}
+.form p{
+    float: left;
+    width: 1.2rem;
+    line-height: 0.54rem;
+}
+.form .right{
+    position: relative;
+    margin-left: 1.2rem;
+}
+.form input,.form select,.form textarea{
+    height: 0.54rem;
+    line-height: 0.54rem;
+    width: 100%;
+    background: #f7f7f7;
+    border: none;
+    background: #f1f1f1;
+    border: 1px solid #c4c4c4;
+}
+.form textarea{
+    height: 3.2rem;
+}
+.form .date .right i{
+    position: absolute;
+    right: 0.1rem;
+    top: 0.1rem;
+    width: 0.24rem;
+    height: 0.24rem;
+    background: url("../images/date.png") no-repeat;
+    background-size: 100% 100%;
+}
+.form .code .right{
+    text-align: left;
+}
+.form .code .codeInp{
+    width: 1.6rem;
+}
+.form .code input[type=button]{
+    width: 1.6rem;
+    background: #b50000;
+    border-radius: 3px;
+    color: #fff;
+}
+.form button{
+    margin-top: 0.38rem;
+    width: 2.08rem;
+    line-height: 0.56rem;
+    background: #b50000;
+    border-radius: 3px;
+    color: #fff;
+}
+.form .code canvas {
+    vertical-align: top;
+}
+
+
+.content1{
+    padding: 0.3rem 0;
+}
+.content1 .content-li{
+    background: #f7f7f7;
+    width: 90%;
+    margin: 0 auto 0.38rem;
+    box-shadow: 0 0 10px #dedddd;
+}
+.content1 .content-li.active .li-fr .title,.content1 .content-li.active .li-fr .detail{
+    color: #b50000;
+}
+.content1 .content-li .li-fl{
+    position: relative;
+    width: 70.8%;
+}
+.content1 .content-li .li-fl img{
+    width: 100%;
+    height: auto;
+}
+.content1 .content-li .li-fl .tip{
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 0.5rem;
+    height: 0.5rem;
+    background: url(../images/720.png) no-repeat;
+    background-size: 100% 100%;
+}
+.content1 .content-li .li-fr{
+    /*position: relative;*/
+    width: 28%;
+    /*margin-left: 70%;*/
+    text-align: center;
+    font-size: 0.32rem;
+    font-weight: bold;
+    padding-top: 0.5rem;
+}
+.content1 .content-li .li-fr .title{
+    margin-top: 60px;
+    font-size: 32px;
+    color: #000;
+    font-weight: bold;
+    line-height: 70px;
+}
+.content1 .content-li .li-fr .detail{
+    padding-right: 50px;
+    font-size: 16px;
+    color: #666;
+    font-weight: bold;
+    line-height: 42px;
+}

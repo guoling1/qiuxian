@@ -1,0 +1,97 @@
+.column-title{
+    line-height: 0.66rem;
+    background: #015293;
+    color: #fff;
+}
+.column-title .left{
+    font-weight: 900;
+    margin-left: 0.3rem;
+}
+.column-title .right{
+    margin-right: 0.3rem;
+    color: #fff;
+}
+.title-group{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin: 0.4rem auto;
+    width: 6.9rem;
+    text-align: center;
+    font-weight: bold;
+}
+.title-group div{
+    padding: 0 0.1rem;
+    margin-bottom: 0.15rem;
+    width: 3.2rem;
+    box-shadow: 0 0 10px #edecec;
+    border-radius: 0.05rem;
+    height: 1.1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.title-group div.finish{
+    background: #cdcdcd;
+    color: #fff;
+}
+.title-group div.active{
+    background: #4fa3e7;
+    color: #fff;
+}
+.form{
+    margin: 0 auto;
+    width: 6.9rem;
+    font-weight: bold;
+}
+.form .list{
+    margin-top: 0.2rem;
+}
+.form p{
+    display: inline-block;
+    line-height: 0.9rem;
+    font-size: 0.32rem;
+    font-weight: 900;
+    text-align: right;
+    width: 1.6rem;
+}
+.form .right{
+
+}
+/*.form input,.form textarea{
+    padding: 0 0.4rem;
+    height: 0.74rem;
+    line-height: 0.74rem;
+    width: 6.1rem;
+    border-bottom: 1px solid #d2d2d2;
+}*/
+.form textarea{
+    margin-top: 0.2rem;
+    padding: 0.2rem;
+    width: 6.5rem;
+    height: 1.95rem;
+    border: 1px solid #d2d2d2;
+    border-radius: 0.05rem;
+}
+.form select{
+    padding: 0 0.4rem 0 0.6rem;
+    width: 4rem;
+    height: 0.74rem;
+    line-height: 0.74rem;
+    border: 1px solid #d2d2d2;
+    border-radius: 0.05rem;
+    margin: 0 auto;
+}
+.form .tips{
+    line-height: 0.6rem;
+    color: #7d0000;
+}
+.form button{
+    display: inherit;
+    margin: 0.38rem auto;
+    width: 2.08rem;
+    line-height: 0.56rem;
+    background: #015293;
+    border-radius: 3px;
+    color: #fff;
+}

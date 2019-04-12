@@ -1,0 +1,144 @@
+.main{
+    position: relative;
+    box-shadow: 0 0 10px #a09f9f;
+    margin: 30px auto 0;
+    width: 1400px;
+    border-top: 4px solid #980c21;
+    border-bottom: 4px solid #980c21;
+    border-radius: 5px;
+    background: #fff;
+}
+.main .box-nav{
+    position: absolute;
+    top: -40px;
+    width: 24.5%;
+
+}
+.main .box-nav .lf-center,.main .box-nav ul{
+    float: right;
+    width: 90%;
+    background: #f7f7f7;
+}
+.main .box-nav .lf-center{
+    text-align: center;
+}
+.main .box-nav .lf-center img{
+    text-align: center;
+    padding: 35px 0;
+
+}
+.main .box-nav ul{
+    padding-bottom: 20px;
+}
+.main .box-nav ul li{
+    position: relative;
+    height: 57px;
+    line-height: 57px;
+}
+.main .box-nav ul li.active{
+    background: #980c21;
+    /*background: url("../images/intro-lf.png") no-repeat;*/
+}
+.main .box-nav ul li.active i{
+    position: absolute;
+    left: -20px;
+    bottom: 0;
+    width: 20px;
+    height: 68px;
+    background: #980c21;
+    background: url("../images/intro-lf.png") no-repeat;
+    background-size: 100%;
+}
+.main .box-nav ul li a{
+    font-size: 18px;
+    color: #666;
+}
+.main .box-nav ul li.active a{
+    color: #fff;
+}
+.main .box-nav ul li a span{
+    margin: 0 20px 0 65px;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.main .box-rt{
+    padding: 40px 46px 100px;
+    width: 75.5%;
+}
+.main .box-rt .bread,.main .box-rt .bread a{
+    font-size: 16px;
+    font-weight: bold;
+    color: #980c21;
+}
+.box-rt .title{
+    margin: 40px 0;
+    text-align: center;
+}
+.box-rt .title span{
+    position: relative;
+    display: inline-block;
+    padding: 0 10px 27px;
+    font-size: 20px;
+    color: #000;
+    border-bottom: 1px solid #d8d8d8;
+}
+.box-rt .title i{
+    position: absolute;
+    bottom: -1px;
+    left: 35%;
+    display: inline-block;
+    width: 30%;
+    height: 1px;
+    background: #000;
+}
+.peoples{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.peoples li{
+    margin-bottom: 64px;
+    width: 23%;
+    text-align: center;
+    border-bottom: 1px solid #d1d1d1;
+}
+.peoples li img{
+    width: 100%;
+    height: auto;
+}
+.peoples li .name{
+    margin: 30px 0 10px;
+    font-size: 18px;
+    color: #000;
+}
+.peoples li .year{
+    margin-bottom: 30px;
+    font-size: 14px;
+    color: #666;
+}
+.page{
+    padding: 20px 0;
+    margin: 0 auto;
+    text-align: center;
+}
+.page div{
+    display: inline-block;
+    border: 1px solid #7d0000;
+    color: #000;
+    font-size: 16px;
+    font-weight: bold;
+    line-height: 38px;
+    text-align: center;
+}
+.page .prev,.page .next{
+    padding: 0 15px;
+}
+.page .num{
+    width: 38px;
+    height: 38px;
+}
+.page .num.active{
+    background: #7d0000;
+    color: #fff;
+}

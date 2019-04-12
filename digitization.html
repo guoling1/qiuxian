@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>邱县干部日常考核平台</title>
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/pagination.css">
+    <link rel="stylesheet" href="css/public.css">
+    <link rel="stylesheet" href="css/digitization.css">
+</head>
+<body>
+<div class="headerPage"></div>
+<div class="banner-box">
+    <div class="banner-swiper swiper-container">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide"><img src="images/contact-banner.png" alt=""></div>
+        </div>
+    </div>
+</div>
+<div class="bread">首页 &gt; 数字园馆</div>
+<ul class="content1">
+    <li class="content-li active clear">
+        <div class="li-fl fl">
+            <img src="images/digit.png" alt="">
+            <span class="tip"></span>
+        </div>
+        <div class="li-fr">
+            <p>左权将军</p>
+            <p>纪念馆</p>
+        </div>
+    </li>
+    <li class="content-li clear">
+        <div class="li-fl fl">
+            <img src="images/digit.png" alt="">
+            <span class="tip"></span>
+        </div>
+        <div class="li-fr">
+            <p>左权将军</p>
+            <p>纪念馆</p>
+        </div>
+    </li>
+</ul>
+<div id="page"></div>
+
+<div class="footerPage"></div>
+<script src="js/rem.js"></script>
+<script src="js/jquery-3.3.1.min.js"></script>
+<script src="js/public.js"></script>
+<script src="js/pagination.js"></script>
+<script>
+    //获取当前页码
+    var current;
+    var pageSize = 10;
+    //请求当前页要展示的数据
+    $.ajax({
+        type: "POST",
+        dataType: "json",
+        url: GLOBEL_URl,
+        data: {
+            oper: 'getContentList',
+            typeid: $.Request('id'),
+            pageSize: pageSize,
+            pageIndex: 1
+        },
+        success: function (data) {
+            current = data.recordCount;
+            var arr = [];
+            for (var i = 0; i < current; i++) {
+                arr.push(i)
+            }
+            $('#page').pagination({
+                dataSource: arr,
+                pageSize: pageSize,
+                prevText: '<上一页',
+                nextText: '下一页>',
+                callback: function () {
+                    $.ajax({
+                        type: "POST",
+                        dataType: "json",
+                        url: GLOBEL_URl,
+                        data: {
+                            oper: 'getContentList',
+                            typeid: $.Request('id'),
+                            pageSize: pageSize,
+                            pageIndex: arguments[1].pageNumber
+                        },
+                        success: function (data) {
+                            var aLi = '';
+                            $(data.data).each(function (ind, item) {
+                                aLi += `
+                                    <li class="content-li clear">
+                                        <a href="`+item.Links+`">
+                                            <div class="li-fl fl">
+                                                <img src="`+GLOBEL_IP+``+item.ImgUrl+`" alt="">
+                                                <span class="tip"></span>
+                                            </div>
+                                            <div class="li-fr fr">
+                                                <p class="">`+item.Title+`</p>
+
+                                            </div>
+                                        </a>
+                                    </li>
+                                `
+                                // $('.detail').html(item.ContentHtml)
+                            })
+                            $('.content1').html(aLi)
+                        }
+                    })
+                }
+            });
+        }
+    })
+</script>
+</body>
+</html>

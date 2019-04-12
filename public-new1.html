@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>邱县干部日常考核平台</title>
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/swiper-4.3.3.min.css">
+    <link rel="stylesheet" href="css/pagination.css">
+    <link rel="stylesheet" href="css/public.css">
+    <link rel="stylesheet" href="css/information.css">
+</head>
+<body>
+<div class="headerPage"></div>
+<!--<div class="banner-box">
+    <div class="banner-swiper swiper-container">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide"><img src="images/introduce-banner.png" alt=""></div>
+        </div>
+    </div>
+</div>-->
+<div class="nav">
+    <ul id="left-menu">
+        <!--<li>
+            <a href="guide.html">
+                <p>参观指南</p>
+                <p>GUIDE</p>
+            </a>
+        </li>
+        <li>
+            <a href="directions.html">
+                <p>交通指南</p>
+                <p>DIRECTIONS</p>
+            </a>
+        </li>
+        <li class="active">
+            <a href="suggestion.html">
+                <p>意见建议</p>
+                <p>SUGGESTION</p>
+            </a>
+        </li>-->
+    </ul>
+</div>
+<div class="bread">首页 &gt; 最新动态</div>
+<ul class="content" id="detail">
+    <!--<li class="active clear">
+        <a href="informationDetail.html">
+            <div class="con-lf fl">
+                <p class="day">22</p>
+                <p class="mouth">2018-10</p>
+            </div>
+            <div class="con-rt">
+                <p class="title">邯郸市烈士纪念日公祭烈士活动在邱县干部日常考核平台举行</p>
+                <p class="detail">9月30日上午，在全国烈士纪念日之际，邯郸市公祭烈士纪念活动在邱县干部日常考核平台隆重举行。邯郸市四套班子领导、军分区领导、烈属和老战士代表、市直单位主要负责同......</p>
+            </div>
+        </a>
+    </li>
+    <li class="clear">
+        <a href="informationDetail.html">
+            <div class="con-lf fl">
+                <p class="day">22</p>
+                <p class="mouth">2018-10</p>
+            </div>
+            <div class="con-rt">
+                <p class="title">邯郸市烈士纪念日公祭烈士活动在邱县干部日常考核平台举行</p>
+                <p class="detail">9月30日上午，在全国烈士纪念日之际，邯郸市公祭烈士纪念活动在邱县干部日常考核平台隆重举行。邯郸市四套班子领导、军分区领导、烈属和老战士代表、市直单位主要负责同......</p>
+            </div>
+        </a>
+    </li>-->
+</ul>
+<div id="page"></div>
+
+<div class="footerPage"></div>
+<script src="js/rem.js"></script>
+<script src="js/jquery-3.3.1.min.js"></script>
+<script src="js/swiper-4.3.3.min.js"></script>
+<script src="js/public.js"></script>
+<script src="js/pagination.js"></script>
+<script>
+    leftMenu()
+    //获取当前页码
+    var current;
+    var pageSize = 10;
+    //请求当前页要展示的数据
+    $.ajax({
+        type: "POST",
+        dataType: "json",
+        url: GLOBEL_URl,
+        data: {
+            oper: 'getContentList',
+            typeid: $.Request('id'),
+            pageSize: pageSize,
+            pageIndex: 1
+        },
+        success: function (data) {
+            current = data.recordCount;
+            var arr = [];
+            for (var i = 0; i < current; i++) {
+                arr.push(i)
+            }
+            $('#page').pagination({
+                dataSource: arr,
+                pageSize: pageSize,
+                prevText: '<上一页',
+                nextText: '下一页>',
+                callback: function () {
+                    $.ajax({
+                        type: "POST",
+                        dataType: "json",
+                        url: GLOBEL_URl,
+                        data: {
+                            oper: 'getContentList',
+                            typeid: $.Request('id'),
+                            pageSize: pageSize,
+                            pageIndex: arguments[1].pageNumber
+                        },
+                        success: function (data) {
+                            var aLi = '';
+                            $(data.data).each(function (ind, item) {
+                                aLi += `
+                                    <li class="clear">
+                <a href="public-new-detail.html?id=`+item.ContentId+`&ParentId=`+$.Request('ParentId')+`">
+                    <div class="con-lf fl">
+                        <p class="day">`+formatDate(item.CreateDate)[1]+`</p>
+                        <p class="mouth">`+formatDate(item.CreateDate)[0]+`</p>
+                    </div>
+                    <div class="con-rt">
+                        <p class="title">`+item.Title+`</p>
+                        <div class="detail">`+item.Summary+`</div>
+                    </div>
+                </a>
+            </li>
+                                `
+                            })
+                            $('#detail').html(aLi)
+                        }
+                    })
+                }
+            });
+        }
+    })
+</script>
+</body>
+</html>

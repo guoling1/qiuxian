@@ -1,0 +1,88 @@
+.nav ul.guide li{
+    width: 32%;
+}
+.content{
+    padding: 0.3rem;
+}
+.content .title{
+    text-align: center;
+}
+.content .title span{
+    position: relative;
+    display: inline-block;
+    /*padding: 0 10px 27px;*/
+    padding-bottom: 0.14rem;
+    font-size: 0.32rem;
+    color: #000;
+    border-bottom: 1px solid #d8d8d8;
+}
+.content .title span i{
+    position: absolute;
+    bottom: 0;
+    left: 35%;
+    display: inline-block;
+    width: 30%;
+    height: 1px;
+    background: #000;
+}
+
+.form{
+    padding-top: 0.4rem;
+    width: 90%;
+    margin: 0 auto;
+    text-align: center;
+    color: #666;
+}
+.form .list{
+    margin-bottom: 0.36rem;
+}
+.form p{
+    float: left;
+    width: 1.5rem;
+    line-height: 0.54rem;
+}
+.form .right{
+    position: relative;
+    margin-left: 1.5rem;
+}
+.form input,.form select{
+    height: 0.54rem;
+    line-height: 0.54rem;
+    width: 100%;
+    background: #f7f7f7;
+    border: none;
+    background: #f1f1f1;
+    border: 1px solid #c4c4c4;
+}
+.form .date .right i{
+    position: absolute;
+    right: 0.1rem;
+    top: 0.1rem;
+    width: 0.24rem;
+    height: 0.24rem;
+    background: url("../images/date.png") no-repeat;
+    background-size: 100% 100%;
+}
+.form .code .right{
+    text-align: left;
+}
+.form .code .codeInp{
+    width: 1.6rem;
+}
+.form .code input[type=button]{
+    width: 1.6rem;
+    background: #b50000;
+    border-radius: 3px;
+    color: #fff;
+}
+.form button{
+    margin-top: 0.38rem;
+    width: 2.08rem;
+    line-height: 0.56rem;
+    background: #b50000;
+    border-radius: 3px;
+    color: #fff;
+}
+.form .code canvas {
+    vertical-align: top;
+}

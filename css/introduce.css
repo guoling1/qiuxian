@@ -1,0 +1,26 @@
+.nav ul li{
+    width: 32%;
+}
+.nav ul:last-child li:nth-child(2){
+    border: none;
+}
+.content{
+    padding: 0 0.3rem;
+}
+.content .title{
+    font-size: 0.32rem;
+    font-weight: bold;
+    color: #000;
+    text-align: center;
+    line-height: 0.84rem;
+}
+.content p{
+    line-height: 0.46rem;
+}
+.content .img-group{
+    display: flex;
+    justify-content: space-between;
+}
+.content .img-group img{
+    width: 47%;
+}
