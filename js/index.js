@@ -1,11 +1,11 @@
-//获取咨询
-/*$.ajax({
+//获取工作动态
+$.ajax({
     type: "POST",
     dataType: "json",
     url: GLOBEL_URl,
     data: {
         oper: 'getContentList',
-        typeid: '43c18d0e-0772-451a-912d-d36bcacace63',
+        typeid: '43C18D0E-0772-451A-912D-D36BCACACE63',
         pageSize: 4,
         pageIndex: 1
     },
@@ -14,7 +14,7 @@
         $(data.data).each(function (ind, item) {
             aLi += `
                         <li class="clear">
-                            <a href="public-new-detail.html?id=`+item.ContentId+`&ParentId=d9826e7d-cedb-4a24-a8bf-e63ecdb30e25">
+                            <a href="news-detail.html?id=`+item.ContentId+`">
                                 <div class="left fl">
                                     <p class="day">`+formatDate(item.CreateDate)[1]+`</p>
                                     <p>`+formatDate(item.CreateDate)[0]+`</p>
@@ -31,16 +31,16 @@
         })
         $('.column1').html(aLi)
     }
-})*/
+})
 
 //获取通知公告
-/*$.ajax({
+$.ajax({
     type: "POST",
     dataType: "json",
     url: GLOBEL_URl,
     data: {
         oper: 'getContentList',
-        typeid: 'a7514f49-4792-48eb-8f0c-2e73c7c68589',
+        typeid: 'A7514F49-4792-48EB-8F0C-2E73C7C68589',
         pageSize: 4,
         pageIndex: 1
     },
@@ -49,18 +49,16 @@
         $(data.data).each(function (ind, item) {
             aLi += `
                         <li>
-                        <a href="public-new-detail.html?id=`+item.ContentId+`&parentName=通知公告&&ParentId=a7514f49-4792-48eb-8f0c-2e73c7c68589">
+                        <a href="news-detail.html?id=`+item.ContentId+`&parentName=通知公告">
                             <div class="number">0`+(ind+1)+`</div>
                             <div class="title">`+item.Title+`</div>
-                            <div class="date">`+item.CreateDate.split(' ')[0]+`</div>
                            </a>
                         </li>
-                                   
                                 `
         })
         $('.column2').html(aLi)
     }
-})*/
+})
 
 var flag=false;
 $('.submit').click(function () {
@@ -75,6 +73,7 @@ $('.submit').click(function () {
                 url: GLOBEL_URl,
                 data: {
                     oper: 'addFeedback',
+                    openidcontent:'oXQlD5uqC92zyzRlThaOl_o5Y3m0',
                     content: $("#content").val(),
                 },
                 dataType : "json",

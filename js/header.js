@@ -1,30 +1,13 @@
-/**
- * 搜索下拉选
- */
-$('#select').click(function () {
-    $('#select .select-ul').css('display','block')
-})
-$('#select .select-ul li').each(function () {
-    $(this).click(function (e) {
-        e.stopPropagation();
-        $('#select .select-ul').css('display','none');
-        $('#select p').html($(this).html())
-    })
-})
 if(/index/.test(window.location.pathname)){
-    $('.menu').hide();
-    $('.search').show();
+    $('.head-box .left').hide();
 }
-$('.menu').click(function () {
-    $(".menu-box").toggle(300)
-})
-document.headerH = $('.head-box').css('height');
+// document.headerH = $('.head-box').css('height');
 //搜索
 $('#search').click(function () {
     window.location.href="search.html?key="+$("#search_key").val();
 })
 
-$.ajax({
+/*$.ajax({
     type: 'POST',
     url: GLOBEL_URl,
     data: {
@@ -89,8 +72,8 @@ $.ajax({
 
                 var op = document.createElement('p');
                 op.innerHTML = aList[i].FullName;
-                /*var op1 = document.createElement('p');
-                op1.innerHTML = aList[i].EnName||' ';*/
+                /!*var op1 = document.createElement('p');
+                op1.innerHTML = aList[i].EnName||' ';*!/
                 oA.appendChild(op);
                 // oA.appendChild(op1);
                 oLi.appendChild(oA)
@@ -99,7 +82,7 @@ $.ajax({
             }
         }
     }
-})
+})*/
 //轮播图
 $.ajax({
     type: 'POST',

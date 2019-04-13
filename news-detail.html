@@ -27,7 +27,7 @@
 <script src="js/swiper-4.3.3.min.js"></script>
 <script src="js/public.js"></script>
 <script>
-    var navList = JSON.parse(localStorage.getItem('navList'));
+    /*var navList = JSON.parse(localStorage.getItem('navList'));
     var parentName;
     for (var i=0;i<navList.length;i++){
         console.log(navList[i].ContentTypeId)
@@ -36,7 +36,7 @@
             parentName = navList[i].FullName;
             $(".bread").html('<a href="index.html">首页</a> &gt; <a href="javascript:;">'+parentName+'</a>')
         }
-    }
+    }*/
     $.ajax({
         type: "POST",
         dataType: "json",
@@ -46,8 +46,9 @@
             id: $.Request('id')
         },
         success: function (data) {
-            $('.title').html(data.data.Title)
-            $('.audio').html('[来源：'+data.data.Source+' | 作者：'+data.data.Author+' | 日期：'+data.data.CreateDate+' | 浏览'+data.data.Click+' 次]')
+            $('.content .title').html(data.data.Title)
+            $('.audio').html('[来源：'+data.data.Source+']')
+            $('.date').html(data.data.CreateDate)
             data.data.ContentHtml = data.data.ContentHtml.replace(/src="\/res/g,'src="'+GLOBEL_IP+'/res')
             $('.detail').html(data.data.ContentHtml)
             addContentClick($.Request('id'))

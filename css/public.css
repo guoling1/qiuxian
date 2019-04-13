@@ -159,20 +159,15 @@
     color: #222;
     margin-bottom: 0.5rem;
     text-align: center;
+    font-size: 0.16rem;
 }
-.menu-box ul li:nth-child(4),.nav ul li:nth-child(8){
+.menu-box ul li:nth-child(4),.menu-box ul li:nth-child(8){
     border-right: none;
 }
-.menu-box ul li:last-child,.nav ul li:last-child{
-    border-right: none;
-}
-.menu-box ul li p:first-child,.nav ul li p:first-child{
+.menu-box ul li p:first-child{
     font-size: 0.3rem;
     color: #333;
     font-weight: bold;
-}
-.nav ul li.active p{
-    color: #980c21;
 }
 /*菜单 menu-box*/
 .menu-box{
