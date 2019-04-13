@@ -4,16 +4,13 @@
  */
 $(".headerPage").load("header.html",function (result) {
     $.get('js/header.js');
-    if(/flower/.test(window.location.pathname)){
-        $('.main').css('height',(document.body.clientHeight-parseFloat($('.headerPage').css('height')))+'px');
-    }
 });
 $(".footerPage").load("footer.html",function (result) {
     $.get('js/footer.js');
 });
 
-var GLOBEL_URl = "http://jjlylsly.cn/Ajax/cms.ashx";
-var GLOBEL_IP = "http://jjlylsly.cn";
+var GLOBEL_URl = "http://qxzzb.hdjincheng.cn/Ajax/cms.ashx";
+var GLOBEL_IP = "http://qxzzb.hdjincheng.cn";
 //获取url参数
 $.Request = function (name) {
     var reg = new RegExp("(^|&)" + name + "=([^&]*)(&|$)", "i");

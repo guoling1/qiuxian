@@ -101,8 +101,7 @@ $.ajax({
     }
 })
 //轮播图
-if(!/flower/.test(window.location.pathname)){
-/*$.ajax({
+$.ajax({
     type: 'POST',
     url: GLOBEL_URl,
     data: {
@@ -123,12 +122,6 @@ if(!/flower/.test(window.location.pathname)){
                     delay: 2500,
                     disableOnInteraction: false,
                 },
-                // navigation: {
-                //     nextEl: '.swiper-button-next',
-                //     prevEl: '.swiper-button-prev',
-                // },
             })
-
     }
-})*/
-}
+})
