@@ -1,0 +1,107 @@
+.message-title{
+    text-align: center;
+}
+.message-title span{
+    position: relative;
+    display: inline-block;
+    /*padding: 0 10px 27px;*/
+    padding-bottom: 0.14rem;
+    font-size: 0.32rem;
+    font-weight: bold;
+    color: #000;
+    border-bottom: 1px solid #d8d8d8;
+}
+.message-title span i{
+    position: absolute;
+    bottom: -1px;
+    left: 35%;
+    display: inline-block;
+    width: 30%;
+    height: 1px;
+    background: #000;
+}
+.message .message-ul{
+    padding: 0 0.3rem 0.5rem;
+    /*border-bottom: 0.2rem solid #f1f1f1;*/
+}
+.message .message-ul li{
+    padding-top: 0.28rem;
+    border-bottom: 1px dashed #7d0000;
+    line-height: 0.48rem;
+}
+.message .message-ul li .name{
+    margin-bottom: 0.1rem;
+    color: #000;
+    font-size: 0.3rem;
+    font-weight: bold;
+}
+.message .message-ul li .time{
+    /*margin-bottom: 0.1rem;*/
+}
+.message .message-ul li .detail{
+    margin-bottom: 0.22rem;
+    color: #666666;
+}
+.comment{
+    padding: 0.3rem;
+}
+.form{
+    padding-top: 0.4rem;
+    width: 6.2rem;
+    text-align: center;
+    color: #666;
+    font-weight: bold;
+}
+.form .list{
+    margin-bottom: 0.36rem;
+}
+.form p{
+    float: left;
+    width: 1.3rem;
+    line-height: 0.54rem;
+    text-align: right;
+}
+.form .right{
+    position: relative;
+    margin-left: 1.4rem;
+}
+.form input,.form textarea{
+    height: 0.54rem;
+    line-height: 0.54rem;
+    width: 100%;
+    background: #f7f7f7;
+    border: none;
+    border-radius: 0.05rem;
+}
+.form textarea{
+    height: 3.2rem;
+}
+.form .code .right{
+    text-align: left;
+}
+.form .code .codeInp{
+    width: 1.6rem;
+}
+.form .code input[type=button]{
+    width: 1.6rem;
+    background: #015293;
+    border-radius: 3px;
+    color: #fff;
+}
+.form button{
+    margin: 0.38rem 0;
+    width: 2.08rem;
+    line-height: 0.56rem;
+    background: #015293;
+    border-radius: 3px;
+    color: #fff;
+}
+.form .code canvas {
+    vertical-align: top;
+}
+.message{
+    margin-top: 20px;
+    background: #fff;
+    border-bottom: 0.2rem solid #f1f1f1;
+    padding-bottom: 0.5rem;
+}

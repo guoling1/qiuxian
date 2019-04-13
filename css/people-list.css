@@ -1,0 +1,35 @@
+.peoples{
+    padding: 0 0.3rem;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+.peoples li{
+    margin-bottom: 0.38rem;
+    width: 2.7rem;
+    text-align: center;
+    border-bottom: 1px solid #d1d1d1;
+}
+.peoples li img{
+    width: 100%;
+    height: 3.22rem;
+}
+.peoples li .name{
+    margin: 0.3rem 0 0.1rem;
+    color: #000;
+    font-size: 0.32rem;
+    font-weight: bold;
+}
+.peoples li .year{
+    margin-bottom: 0.26rem;
+    color: #666;
+    font-style: italic;
+}
+#page{
+    margin-bottom: 0.4rem;
+}
+.bread{
+    padding: 0 0.3rem;
+    line-height: 0.66rem;
+    font-weight: bold;
+}

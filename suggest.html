@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>邱县干部日常考核平台</title>
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/swiper-4.3.3.min.css">
+    <link rel="stylesheet" href="css/pagination.css">
+    <link rel="stylesheet" href="css/public.css">
+    <link rel="stylesheet" href="css/suggest.css">
+</head>
+<body>
+<div class="headerPage"></div>
+<div class="column-title clear">
+    <span class="left">建议箱 | suggestion</span>
+</div>
+<div class="people">
+    <div class="message" style="margin-top: 20px">
+        <div class="message-title"><span>建议展示<i></i></span></div>
+        <ul class="message-ul">
+            <li>
+                <p class="name">祭奠着：文松婷</p>
+                <p class="time">发表于 2018/04/09 7:32</p>
+                <p class="detail">烈士们你们的鲜血付出了今天的成就，像你们致敬</p>
+            </li>
+            <li>
+                <p class="name">祭奠着：文松婷</p>
+                <p class="time">发表于 2018/04/09 7:32</p>
+                <p class="detail">烈士们你们的鲜血付出了今天的成就，像你们致敬</p>
+            </li>
+        </ul>
+        <div id="page"></div>
+    </div>
+    <div class="comment">
+        <div class="message-title"><span>意见建议<i></i></span></div>
+        <div class="form">
+            <div class="list date">
+                <p>意见建议:</p>
+                <div class="right">
+                    <textarea id="content"></textarea>
+                </div>
+            </div>
+            <div class="list code">
+                <p>验证码:</p>
+                <div class="right">
+                    <input type="text" class="codeInp" id="input" name="messageCode">
+                    <span id="imgCode"></span>
+                </div>
+            </div>
+            <button class="submit">提 交</button>
+        </div>
+    </div>
+</div>
+<script src="js/rem.js"></script>
+<script src="js/jquery-3.3.1.min.js"></script>
+<script src="js/swiper-4.3.3.min.js"></script>
+<script src="js/public.js"></script>
+<script src="js/pagination.js"></script>
+<script src="js/suggest.js"></script>
+<script>
+    $.ajax({
+        type: "POST",
+        dataType: "json",
+        url: GLOBEL_URl,
+        data: {
+            oper: 'getContent',
+            id: $.Request('ContentId')
+        },
+        success: function (data) {
+            // $('.people-data .img').attr('src',GLOBEL_IP+data.data.ImgUrl)
+            data.data.ContentHtml = data.data.ContentHtml.replace(/src="\/res/g,'src="'+GLOBEL_IP+'/res')
+            $('.data-fr').html(data.data.ContentHtml)
+            // addContentClick($.Request('ContentId'))
+        }
+    })
+</script>
+</body>
+</html>

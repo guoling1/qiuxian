@@ -186,17 +186,6 @@
     /*color: #fff;*/
 }
 
-.bread{
-    padding: 0 0.3rem;
-    line-height: 0.66rem;
-    background: #f6e7d8;
-    color: #7d0000;
-    font-weight: bold;
-}
-.bread a{
-    color: #7d0000;
-    font-weight: bold;
-}
 /*分页 .page*/
 .paginationjs .paginationjs-pages{
     float: none;
@@ -209,12 +198,12 @@
 .paginationjs .paginationjs-pages li{
     float: none;
     display: inline-block;
-    border: 1px solid #7d0000;
+    border: 1px solid #015293;
     margin-right: 5px;
 }
 .paginationjs .paginationjs-pages li:last-child{
     margin-right: 0;
-    border: 1px solid #7d0000;
+    border: 1px solid #015293;
     padding: 0 0.05rem;
 }
 .paginationjs .paginationjs-pages li:first-child{
@@ -242,38 +231,19 @@
 .paginationjs .paginationjs-pages li.active>a {
     height: 24px;
     line-height: 24px;
-    background: #7d0000;
+    background: #015293;
     color: #fff;
 }
-/*@media screen and (max-width: 1420px){*/
-    /*.head-box .head{*/
-        /*width: 90%;*/
-    /*}*/
-    /*.banner-box .content-box .content-list {*/
-        /*width: 90%;*/
-    /*}*/
-    /*.main-box .main{*/
-        /*width: 90%;*/
-    /*}*/
-/*}*/
-/*@media screen and (max-width: 1420px){*/
-    /*.head-box .head{*/
-        /*width: 90%;*/
-    /*}*/
-    /*.banner-box .content-box .content-list {*/
-        /*width: 90%;*/
-    /*}*/
-    /*.main-box .main{*/
-        /*width: 90%;*/
-    /*}*/
-/*}*/
-/*@media screen and (max-width: 1024px){*/
-
-/*}*/
-/*@media screen and (max-width: 768px){*/
-
-/*}*/
-
-/*@media screen and (max-width:414px){*/
-
-/*}*/
+.column-title{
+    line-height: 0.66rem;
+    background: #015293;
+    color: #fff;
+}
+.column-title .left{
+    font-weight: 900;
+    margin-left: 0.3rem;
+}
+.column-title .right{
+    margin-right: 0.3rem;
+    color: #fff;
+}

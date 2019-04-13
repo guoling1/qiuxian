@@ -1,0 +1,63 @@
+.bread{
+    padding: 0 0.3rem;
+    line-height: 0.66rem;
+    font-weight: bold;
+}
+
+
+.form{
+    margin: 0 auto;
+    width: 6.9rem;
+    font-weight: bold;
+}
+.form .list{
+    margin-top: 0.2rem;
+}
+.form p{
+    display: inline-block;
+    line-height: 0.64rem;
+    font-size: 0.28rem;
+    color: #666;
+    text-align: right;
+    width: 1.7rem;
+}
+.form .right{
+
+}
+/*.form input,.form textarea{
+    padding: 0 0.4rem;
+    height: 0.74rem;
+    line-height: 0.74rem;
+    width: 6.1rem;
+    border-bottom: 1px solid #d2d2d2;
+}*/
+.form textarea{
+    margin-top: 0.2rem;
+    padding: 0.2rem;
+    width: 6.5rem;
+    height: 1.95rem;
+    border: 1px solid #d2d2d2;
+    border-radius: 0.05rem;
+}
+.form select{
+    padding: 0 0.4rem 0 0.6rem;
+    width: 4rem;
+    height: 0.62rem;
+    line-height: 0.62rem;
+    border: 1px solid #d2d2d2;
+    border-radius: 0.05rem;
+    margin: 0 auto;
+}
+.form .tips{
+    line-height: 0.6rem;
+    color: #7d0000;
+}
+.form button{
+    display: inherit;
+    margin: 0.38rem auto;
+    width: 2.08rem;
+    line-height: 0.56rem;
+    background: #015293;
+    border-radius: 3px;
+    color: #fff;
+}

@@ -6,19 +6,7 @@
 .nav ul li {
     width: 24.7%;
 }
-.column-title{
-    line-height: 0.66rem;
-    background: #015293;
-    color: #fff;
-}
-.column-title .left{
-    font-weight: 900;
-    margin-left: 0.3rem;
-}
-.column-title .right{
-    margin-right: 0.3rem;
-    color: #fff;
-}
+
 .news{
     padding: 0.3rem;
 }
