@@ -16,97 +16,25 @@
     <span class="left">监督评议 | supervision</span>
 </div>
 <div class="bread">乡镇街道评议入口 &gt; 新马头镇</div>
+<div class="people">
+    <p class="name">康师傅</p>
+    <!--<div class="name1"><span>镇长<i></i></span></div>-->
+    <img src="images/people.png" alt="" class="avatar">
+    <p class="position">职     务：新马头镇党委书记</p>
+    <p class="responsibility">分管情况：新码头新区市委新区</p>
+    <p class="achievement">工作实绩：新码头新区开发工作，进展。</p>
+</div>
 <div class="form">
-    <div class="list date">
-        <p>政治素质：</p>
-        <select name="" id="">
-            <option value="">高</option>
-            <option value="">较高</option>
-            <option value="">一般</option>
-            <option value="">较差</option>
-        </select>
-    </div>
-    <div class="list date">
-        <p>担当意识：</p>
-        <select name="" id="">
-            <option value="">强</option>
-            <option value="">较高</option>
-            <option value="">一般</option>
-            <option value="">较差</option>
-        </select>
-    </div>
-    <div class="list date">
-        <p>工作作风：</p>
-        <select name="" id="">
-            <option value="">实</option>
-            <option value="">一般</option>
-            <option value="">较差</option>
-            <option value="">非常差</option>
-        </select>
-    </div>
-    <div class="list date">
-        <p>生活作风：</p>
-        <select name="" id="">
-            <option value="">好</option>
-            <option value="">一般</option>
-            <option value="">较差</option>
-            <option value="">非常差</option>
-        </select>
-    </div>
-    <div class="list date">
-        <p>领导能力：</p>
-        <select name="" id="">
-            <option value="">强</option>
-            <option value="">较强</option>
-            <option value="">一般</option>
-            <option value="">较差</option>
-        </select>
-    </div>
-    <div class="list date">
-        <p>工作实绩：</p>
-        <select name="" id="">
-            <option value="">实</option>
-            <option value="">一般</option>
-            <option value="">较差</option>
-            <option value="">非常差</option>
-        </select>
-    </div>
-    <div class="list date">
-        <p>形式主义：</p>
-        <select name="" id="">
-            <option value="">严重</option>
-            <option value="">较严重</option>
-            <option value="">非常严重</option>
-            <option value="">不存在</option>
-        </select>
-    </div>
-    <div class="list date">
-        <p>团团伙伙：</p>
-        <select name="" id="">
-            <option value="">存在</option>
-            <option value="">不存在</option>
-        </select>
-    </div>
-    <div class="list date">
-        <p>认干亲情况：</p>
-        <select name="" id="">
-            <option value="">存在</option>
-            <option value="">不存在</option>
-        </select>
-    </div>
-    <div class="list date">
-        <p>拜把子情况：</p>
-        <select name="" id="">
-            <option value="">存在</option>
-            <option value="">不存在</option>
-        </select>
-    </div>
-    <div class="list code">
-        <p>经商情况：</p>
-        <select name="" id="">
-            <option value="">存在</option>
-            <option value="">不存在</option>
-        </select>
+    <div class="selectGroup">
+        <div class="list">
+            <p>政治素质：</p>
+            <select name="">
+                <option value="">高</option>
+                <option value="">较高</option>
+                <option value="">一般</option>
+                <option value="">较差</option>
+            </select>
+        </div>
     </div>
     <textarea name="" id="" cols="30" rows="10" placeholder="具体情况"></textarea>
     <div class="tips">*注：提交（每个物理地址每季度只允许评价一次，评价结果只有管理员可看，选择选择存在、严重、较差的请列举情况。）</div>
@@ -118,6 +46,51 @@
 <script src="js/swiper-4.3.3.min.js"></script>
 <script src="js/jquery-3.3.1.min.js"></script>
 <script src="js/public.js"></script>
-<script src="js/index.js"></script>
+<script>
+    //获取人员信息
+    $.ajax({
+        type: "POST",
+        dataType: "json",
+        url: GLOBEL_URl,
+        data: {
+            oper: 'getMember',
+            memberid: $.Request('MemberId')
+        },
+        success: function (data) {
+            $('.name').html(data.data.RealName)
+            $('.avatar').attr('src',data.data.RealName)
+            $('.position').html(data.data.Position)
+            $('.responsibility').html(data.data.Responsibility)
+            $('.achievement').html(data.data.Achievement)
+        }
+    })
+    //获取选择列表
+    $.ajax({
+        type: "POST",
+        dataType: "json",
+        url: GLOBEL_URl,
+        data: {
+            oper: 'getSupervisionList',
+        },
+        success: function (data) {
+            var list=[];
+            $(data.data).each(function (ind, item) {
+                list+=`
+                    <div class="list">
+                        <p>`+item.TestContent+`：</p>
+                        <select name="">
+                            <option value="">高</option>
+                            <option value="">较高</option>
+                            <option value="">一般</option>
+                            <option value="">较差</option>
+                        </select>
+                    </div>
+                `
+            })
+
+            $('.selectGroup').html(list)
+        }
+    })
+</script>
 </body>
 </html>

@@ -1,3 +1,4 @@
+$('.column-title .left').html($.Request('type'));
 //获取单位分类
 $.ajax({
     type: "POST",
@@ -40,12 +41,12 @@ $('.submit').click(function () {
     if($("#companyType").val()==0||$("#companyList").val()==0){
         alert("请填写完整信息")
     }else {
-        if($.Request('type')=='监督'){
-            window.location.href = "supervision.html?id="+$("#companyList").val()+"&companyType="+$("#companyType").val();
-        }else if($.Request('type')=='考核'){
-            window.location.href = "recommend1.html?id="+$("#companyList").val()+"&companyType="+$("#companyType").val();
-        }else if($.Request('type')=='推荐'){
-            window.location.href = "people-list.html?id="+$("#companyList").val()+"&companyType="+$("#companyType").val();
+        if($.Request('type')=='监督评议'){
+            window.location.href = "people-list.html?id="+$("#companyList").val()+"&companyType="+$("#companyType").val()+"&type="+$.Request('type');
+        }else if($.Request('type')=='考核评议'){
+            window.location.href = "supervision.html?id="+$("#companyList").val()+"&companyType="+$("#companyType").val()+"&type="+$.Request('type');
+        }else if($.Request('type')=='干部推荐'){
+            window.location.href = "recommend1.html?id="+$("#companyList").val()+"&companyType="+$("#companyType").val()+"&type="+$.Request('type');
         }
 
     }

@@ -7,7 +7,8 @@ $.ajax({
     dataType: "json",
     url: GLOBEL_URl,
     data: {
-        oper: 'getMessageList',
+        oper: 'getCommentsList',
+        contentid: '5cecb4ed-9ecc-482f-9cad-1086779323ca',
         pageSize: pageSize,
         pageIndex: 1
     },
@@ -28,7 +29,8 @@ $.ajax({
                     dataType: "json",
                     url: GLOBEL_URl,
                     data: {
-                        oper: 'getMessageList',
+                        oper: 'getCommentsList',
+                        contentid: '5cecb4ed-9ecc-482f-9cad-1086779323ca',
                         pageSize: pageSize,
                         pageIndex: arguments[1].pageNumber
                     },
@@ -36,11 +38,9 @@ $.ajax({
                         var aLi = '';
                         $(data.data).each(function (ind, item) {
                             aLi += `<li>
-                                        <div class="li-top">
-                                            <span class="name">祭奠着：` + item.Name + `</span>
-                                            <span class="time">发表于 ` + item.CreateDate + `</span>
-                                        </div>
-                                        <div class="detail">` + item.Content + `</div>
+                                        <p class="name">祭奠着：` + item.NickName + `</p>
+                                        <p class="time">发表于 ` + item.CreateDate + `</p>
+                                        <p class="detail">` + item.Content + `</p>
                                     </li>`
                         })
                         $('.message-ul').html(aLi)
@@ -63,9 +63,9 @@ $('.submit').click(function () {
                 type: 'POST',
                 url: GLOBEL_URl,
                 data: {
-                    oper: 'addMessage',
+                    oper: 'addFeedback',
+                    openidcontent:'oXQlD5uqC92zyzRlThaOl_o5Y3m0',
                     content: $("#content").val(),
-                    name: $("#name").val(),
                 },
                 dataType: "json",
                 success: function (data) {
@@ -76,8 +76,6 @@ $('.submit').click(function () {
 
     }
 })
-
-var verifyCode = new GVerify(imgCode);
 
 $("#input").on("blur",function () {
     var inputCode = $("#input").val();

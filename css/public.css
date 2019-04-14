@@ -140,19 +140,19 @@
 }
 
 /*公共导航*/
-.nav{
-    margin: 0.14rem auto 0.21rem;
-    width: 7.3rem;
-    box-shadow: 0 0 0.1rem #fbf1f2;
-    /*text-align: center;*/
+.menu-box{
+    margin: 0.2rem auto;
+    width: 7.32rem;
+    text-align: center;
+    box-shadow: 0 0 10px #fcf0f1;
     border-radius: 0.2rem;
 }
-.menu-box ul,.nav ul{
+.menu-box ul{
     padding: 0.22rem 0 0;
     /*display: flex;*/
     /*justify-content: space-around;*/
 }
-.menu-box ul li,.nav ul li{
+.menu-box ul li{
     display: inline-block;
     width: 23.7%;
     border-right: 1px dashed #666;
@@ -169,17 +169,7 @@
     color: #333;
     font-weight: bold;
 }
-/*菜单 menu-box*/
-.menu-box{
-    margin: 0.2rem auto;
-    width: 7.32rem;
-    text-align: center;
-    box-shadow: 0 0 10px #fcf0f1;
-    border-radius: 0.2rem;
-}
-.menu-box ul li,.menu-box ul li p,.menu-box ul li p:first-child{
-    /*color: #fff;*/
-}
+
 
 /*分页 .page*/
 .paginationjs .paginationjs-pages{

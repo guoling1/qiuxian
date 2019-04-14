@@ -6,7 +6,7 @@ $.ajax({
     data: {
         oper: 'getContentList',
         typeid: '43C18D0E-0772-451A-912D-D36BCACACE63',
-        pageSize: 4,
+        pageSize: 5,
         pageIndex: 1
     },
     success: function (data) {
@@ -14,16 +14,14 @@ $.ajax({
         $(data.data).each(function (ind, item) {
             aLi += `
                         <li class="clear">
-                            <a href="news-detail.html?id=`+item.ContentId+`">
+                            <a href="news-detail.html?type=工作动态&id=`+item.ContentId+`">
                                 <div class="left fl">
                                     <p class="day">`+formatDate(item.CreateDate)[1]+`</p>
                                     <p>`+formatDate(item.CreateDate)[0]+`</p>
                                 </div>
                                 <div class="right">
-                                    <div class="top">
-                                    <span class="title">`+item.Title+`</span>
-                                </div>
-                                <div class="detail">`+item.Summary+`</div>
+                                    <div class="top">`+item.Title+`</div>
+                                    <div class="detail">`+item.Summary+`</div>
                                 </div>
                             </a>
                         </li>
@@ -49,7 +47,7 @@ $.ajax({
         $(data.data).each(function (ind, item) {
             aLi += `
                         <li>
-                        <a href="news-detail.html?id=`+item.ContentId+`&parentName=通知公告">
+                        <a href="news-detail.html?type=通知公告&id=`+item.ContentId+`&parentName=通知公告">
                             <div class="number">0`+(ind+1)+`</div>
                             <div class="title">`+item.Title+`</div>
                            </a>

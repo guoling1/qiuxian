@@ -27,16 +27,7 @@
 <script src="js/swiper-4.3.3.min.js"></script>
 <script src="js/public.js"></script>
 <script>
-    /*var navList = JSON.parse(localStorage.getItem('navList'));
-    var parentName;
-    for (var i=0;i<navList.length;i++){
-        console.log(navList[i].ContentTypeId)
-        if($.Request('ParentId')==navList[i].ContentTypeId){
-            console.log(11)
-            parentName = navList[i].FullName;
-            $(".bread").html('<a href="index.html">首页</a> &gt; <a href="javascript:;">'+parentName+'</a>')
-        }
-    }*/
+    $('.column-title .left').html($.Request('type'));
     $.ajax({
         type: "POST",
         dataType: "json",
