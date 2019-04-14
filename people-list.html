@@ -92,8 +92,9 @@
         dataType: "json",
         url: GLOBEL_URl,
         data: {
-            oper: 'getContentList',
-            typeid: "ea51e2ce-0a70-4e90-875b-b587617e75aa",
+            oper: 'getMemberList',
+            // typeid: $.Request('id'),
+            companyid: '6FDD81DF-21FA-46DF-BB73-17BCA4D6A1CB',
             pageSize: pageSize,
             pageIndex: 1
         },
@@ -114,8 +115,9 @@
                         dataType: "json",
                         url: GLOBEL_URl,
                         data: {
-                            oper: 'getContentList',
-                            typeid: "ea51e2ce-0a70-4e90-875b-b587617e75aa",
+                            oper: 'getMemberList',
+                            // typeid: $.Request('id'),
+                            companyid: '6FDD81DF-21FA-46DF-BB73-17BCA4D6A1CB',
                             pageSize: pageSize,
                             pageIndex: arguments[1].pageNumber
                         },
@@ -124,9 +126,9 @@
                             $(data.data).each(function (ind, item) {
                                 aLi += `
                                         <li>
-                                            <a href="mpDetail.html?ContentId=`+item.ContentId+`&ParentId=`+$.Request('ParentId')+`&id=`+$.Request('id')+`">
-                                                <img src="`+GLOBEL_IP+item.ImgUrl+`" alt="">
-                                                <p class="name">`+item.Title+`</p>
+                                            <a href="mpDetail.html?MemberId=`+item.MemberId+`&id=`+$.Request('id')+`">
+                                                <img src="`+GLOBEL_IP+item.PhotoUrl+`" alt="">
+                                                <p class="name">`+item.RealName+`</p>
                                                 <p class="year"></p>
                                             </a>
                                         </li>
