@@ -50,6 +50,7 @@
 <script src="js/public.js"></script>
 <script src="js/pagination.js"></script>
 <script>
+    $('.column-title .left').html($.Request('type'));
     //获取当前页码
     var current;
     var pageSize = 10;
@@ -91,7 +92,7 @@
                             $(data.data).each(function (ind, item) {
                                 aLi += `
                                     <li class="clear">
-                <a href="public-new-detail.html?id=`+item.ContentId+`&ParentId=`+$.Request('ParentId')+`">
+                <a href="news-detail.html?id=`+item.ContentId+`&type=`+$.Request('type')+`">
                     <div class="con-lf fl">
                         <p class="day">`+formatDate(item.CreateDate)[1]+`</p>
                         <p class="mouth">`+formatDate(item.CreateDate)[0]+`</p>

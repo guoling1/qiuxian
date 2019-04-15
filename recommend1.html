@@ -25,13 +25,13 @@
     <div class="list code">
         <p>职务（必填）:</p>
         <div class="right">
-            <input type="text" class="codeInp" id="input" name="messageCode" placeholder="请输入推荐人职务">
+            <input type="text" class="codeInp" id="position" name="messageCode" placeholder="请输入推荐人职务">
         </div>
     </div>
     <div class="list code">
         <p>推荐理由（必填）:</p>
         <div class="right">
-            <textarea id="content" placeholder="请输入推荐理由"></textarea>
+            <textarea id="reason" placeholder="请输入推荐理由"></textarea>
         </div>
     </div>
     <div class="tips">*注：提交（每个物理地址每季度只允许评价一次，评价结果只有管理员可看，选择选择存在、严重、较差的请列举情况。）</div>
@@ -42,6 +42,32 @@
 <script src="js/swiper-4.3.3.min.js"></script>
 <script src="js/jquery-3.3.1.min.js"></script>
 <script src="js/public.js"></script>
-<script src="js/index.js"></script>
+<!--<script src="js/index.js"></script>-->
+<script>
+    $('.column-title .left').html($.Request('type'));
+    $('.submit').click(function () {
+        if ($("#name").val() == ''||$("#position").val()==''||$("#reason").val()=='') {
+            alert("请填写完整内容")
+        }else {
+                $.ajax({
+                    type: 'POST',
+                    url: GLOBEL_URl,
+                    data: {
+                        oper: 'addRecommend',
+                        openid:'oXQlD5uqC92zyzRlThaOl_o5Y3m0',
+                        companyid: $.Request('id'),
+                        name: $("#name").val(),
+                        position: $("#position").val(),
+                        reason: $("#reason").val(),
+                    },
+                    dataType: "json",
+                    success: function (data) {
+                        alert(data.msg)
+                    }
+                })
+
+        }
+    })
+</script>
 </body>
 </html>

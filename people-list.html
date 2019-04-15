@@ -83,6 +83,7 @@
 <script src="js/public.js"></script>
 <script src="js/pagination.js"></script>
 <script>
+    $('.column-title .left').html($.Request('type'));
     //获取当前页码
     var current;
     var pageSize = 20;
@@ -126,7 +127,7 @@
                             $(data.data).each(function (ind, item) {
                                 aLi += `
                                         <li>
-                                            <a href="mpDetail.html?MemberId=`+item.MemberId+`&id=`+$.Request('id')+`">
+                                            <a href="people-detail.html?MemberId=`+item.MemberId+`&id=`+$.Request('id')+`">
                                                 <img src="`+GLOBEL_IP+item.PhotoUrl+`" alt="">
                                                 <p class="name">`+item.RealName+`</p>
                                                 <p class="year"></p>

@@ -3,6 +3,43 @@
     line-height: 0.66rem;
     font-weight: bold;
 }
+.people{
+    padding-bottom: 0.46rem;
+    text-align: center;
+    font-size: 0.28rem;
+    line-height: 0.6rem;
+    color: #010101;
+    border-bottom: 0.2rem solid #f0f3f8;
+}
+.people .name{
+    margin-top: 0.4rem;
+    font-size: 0.32rem;
+    font-weight: 900;
+    line-height: 0.32rem;
+}
+.people .name1 span{
+    position: relative;
+    display: inline-block;
+    padding-bottom: 0.22rem;
+    font-size: 0.2rem;
+    color: #666666;
+    line-height: 0.24rem;
+    border-bottom: 1px solid #d8d8d8;
+}
+.people .name1 span i{
+    position: absolute;
+    bottom: -1px;
+    left: 35%;
+    display: inline-block;
+    width: 30%;
+    height: 1px;
+    background: #000;
+}
+.people .avatar{
+    margin: 0.38rem auto;
+    width: 2.7rem;
+    height: 3.2rem;
+}
 
 
 .form{

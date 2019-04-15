@@ -5,7 +5,7 @@ body, h1, h2, h3, h4, h5, h6, hr, p, blockquote, dl, dt, dd, ul, ol, li, button,
 }
 
 body {
-    font-size: 12px;
+    font-size: 0.24rem;
     font-style: normal;
     /*font-family: "\5FAE\8F6F\96C5\9ED1", Helvetica, sans-serif;*/
     font-family: -apple-system, BlinkMacSystemFont, "PingFang SC","Helvetica Neue",STHeiti,"Microsoft Yahei",Tahoma,Simsun,sans-serif;
