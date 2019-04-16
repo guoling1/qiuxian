@@ -1,27 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="18cab75a-bfd3-4baf-aac0-070501a525b3" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/1" beforeDir="false" afterPath="$PROJECT_DIR$/1" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/css/index.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/index.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/css/news-list.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/news-list.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/css/people-detail.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/people-detail.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/css/public.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/public.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/css/reset.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/reset.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/header.html" beforeDir="false" afterPath="$PROJECT_DIR$/header.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/js/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/js/recommend.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/recommend.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/js/suggest.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/suggest.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/news-detail.html" beforeDir="false" afterPath="$PROJECT_DIR$/news-detail.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/news-list.html" beforeDir="false" afterPath="$PROJECT_DIR$/news-list.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/people-detail.html" beforeDir="false" afterPath="$PROJECT_DIR$/people-detail.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/people-list.html" beforeDir="false" afterPath="$PROJECT_DIR$/people-list.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/recommend1.html" beforeDir="false" afterPath="$PROJECT_DIR$/recommend1.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/suggest.html" beforeDir="false" afterPath="$PROJECT_DIR$/suggest.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/supervision.html" beforeDir="false" afterPath="$PROJECT_DIR$/supervision.html" afterDir="false" />
-    </list>
+    <list default="true" id="18cab75a-bfd3-4baf-aac0-070501a525b3" name="Default Changelist" comment="" />
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
     <ignored path="$PROJECT_DIR$/tmp/" />
@@ -54,8 +34,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/people-detail.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="33">
-              <caret line="75" column="22" selection-start-line="75" selection-start-column="22" selection-end-line="75" selection-end-column="22" />
+            <state relative-caret-position="429">
+              <caret line="93" column="9" lean-forward="true" selection-start-line="93" selection-start-column="9" selection-end-line="93" selection-end-column="9" />
               <folding>
                 <element signature="n#div#3;n#body#0;n#html#0;n#!!top" />
                 <element signature="e#4149#4654#0" />
@@ -128,8 +108,8 @@
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="817" />
-    <option name="y" value="1" />
+    <option name="x" value="399" />
+    <option name="y" value="74" />
     <option name="width" value="1151" />
     <option name="height" value="1045" />
   </component>
@@ -165,7 +145,7 @@
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../huikao_edu" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
@@ -232,14 +212,21 @@
       <option name="project" value="LOCAL" />
       <updated>1555211695081</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="Merge branch 'master' of https://github.com/guoling1/qiuxian&#10;&#10;# Conflicts:&#10;#&#9;.idea/workspace.xml">
+      <created>1555228442586</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1555228442587</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="33456000" />
+    <option name="totallyTimeSpent" value="33712000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="817" y="1" width="1151" height="1045" extended-state="0" />
+    <frame x="399" y="74" width="1151" height="1045" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.19586703" />
@@ -553,8 +540,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/people-detail.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="33">
-          <caret line="75" column="22" selection-start-line="75" selection-start-column="22" selection-end-line="75" selection-end-column="22" />
+        <state relative-caret-position="429">
+          <caret line="93" column="9" lean-forward="true" selection-start-line="93" selection-start-column="9" selection-end-line="93" selection-end-column="9" />
           <folding>
             <element signature="n#div#3;n#body#0;n#html#0;n#!!top" />
             <element signature="e#4149#4654#0" />
