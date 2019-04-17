@@ -59,10 +59,10 @@
         },
         success: function (data) {
             $('.name').html(data.data.RealName)
-            $('.avatar').attr('src',data.data.RealName)
-            $('.position').html(data.data.Position)
-            $('.responsibility').html(data.data.Responsibility)
-            $('.achievement').html(data.data.Achievement)
+            $('.avatar').attr('src',GLOBEL_IP+data.data.PhotoUrl)
+            $('.position').html('职     务：'+data.data.Position)
+            $('.responsibility').html('分管情况：'+data.data.Responsibility)
+            $('.achievement').html('工作实绩：'+data.data.Achievement)
         }
     })
 
@@ -74,6 +74,7 @@
         url: GLOBEL_URl,
         data: {
             oper: 'getSupervisionList',
+            id:'86F0D44E-DDE8-4F08-9BC0-04D88F4D90B8'
         },
         success: function (data) {
             selectData = data.data;

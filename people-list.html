@@ -19,49 +19,7 @@
 <div class="bread">乡镇街道评议入口 &gt; 新马头镇</div>
 <ul class="peoples">
     <li>
-        <a href="mpDetail.html">
-            <img src="images/people.png" alt="">
-            <p class="name">左权</p>
-            <p class="year">1905-1942</p>
-        </a>
-    </li>
-    <li>
-        <a href="mpDetail.html">
-            <img src="images/people.png" alt="">
-            <p class="name">左权</p>
-            <p class="year">1905-1942</p>
-        </a>
-    </li>
-    <li>
-        <a href="javascript:;">
-            <img src="images/people.png" alt="">
-            <p class="name">左权</p>
-            <p class="year">1905-1942</p>
-        </a>
-    </li>
-    <li>
-        <a href="javascript:;">
-            <img src="images/people.png" alt="">
-            <p class="name">左权</p>
-            <p class="year">1905-1942</p>
-        </a>
-    </li>
-    <li>
-        <a href="javascript:;">
-            <img src="images/people.png" alt="">
-            <p class="name">左权</p>
-            <p class="year">1905-1942</p>
-        </a>
-    </li>
-    <li>
-        <a href="javascript:;">
-            <img src="images/people.png" alt="">
-            <p class="name">左权</p>
-            <p class="year">1905-1942</p>
-        </a>
-    </li>
-    <li>
-        <a href="javascript:;">
+        <a href="people-detail.html">
             <img src="images/people.png" alt="">
             <p class="name">左权</p>
             <p class="year">1905-1942</p>
@@ -94,7 +52,7 @@
         url: GLOBEL_URl,
         data: {
             oper: 'getMemberList',
-            // typeid: $.Request('id'),
+            type: 3,
             companyid: '6FDD81DF-21FA-46DF-BB73-17BCA4D6A1CB',
             pageSize: pageSize,
             pageIndex: 1
@@ -117,7 +75,7 @@
                         url: GLOBEL_URl,
                         data: {
                             oper: 'getMemberList',
-                            // typeid: $.Request('id'),
+                            type: 3,
                             companyid: '6FDD81DF-21FA-46DF-BB73-17BCA4D6A1CB',
                             pageSize: pageSize,
                             pageIndex: arguments[1].pageNumber
