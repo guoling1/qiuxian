@@ -3,98 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="18cab75a-bfd3-4baf-aac0-070501a525b3" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/contact.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/contact1.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/css/contact.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/css/digitization.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/css/flower.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/css/hero-deeds-detail.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/css/hero-deeds.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/css/information.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/css/informationDetail.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/css/memorial-personal.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/css/mpDetail.css" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/css/people-detail.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/people-detail.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/digitization.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/directions.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/flower.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/guide.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/hero-deeds-detail.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/hero-deeds.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/720.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/address.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/banner-left.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/banner-right.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/bend1.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/bend2.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/bottom_center.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/contact-banner.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/date.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/digi-banner.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/digit.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/flower1.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/flower2.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/flower3.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/flower4.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/flower5.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/flower6.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/flowerbg.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/foot-logo.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/guan.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/guan1.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/guan2.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/guide-banner.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/header-bg.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/index-banner.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/introduce-banner.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/introduce-title.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/logo.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/mail.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/map.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/memorial-banner.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/memorial1.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/memorial11.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/memorial2.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/memorial21.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/menu.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/more.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/new.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/news-title.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/notice-title.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/people-tit.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/people-tit1.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/people-tit11.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/people-tit2.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/people-tit22.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/people-tit3.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/phone.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/search.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/section2-1.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/section2-2.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/section2-3.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/section2-4.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/section3.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/star.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/information.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/informationDetail.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/js/flower.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/js/memorial.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/js/reservation-info.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/js/suggest.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/suggest.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/js/suggestion.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/memorial-personal.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/memorial-public.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mpDetail.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/people-detail.html" beforeDir="false" afterPath="$PROJECT_DIR$/people-detail.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public-new-detail.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public-new-detail1.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public-new.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public-new1.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/reservation-info.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/reservation.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/search-detail.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/search.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/suggestion.html" beforeDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -128,8 +37,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/people-detail.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="121">
-              <caret line="78" column="13" selection-start-line="78" selection-start-column="13" selection-end-line="78" selection-end-column="13" />
+            <state relative-caret-position="150">
+              <caret line="10" column="49" lean-forward="true" selection-start-line="10" selection-start-column="49" selection-end-line="10" selection-end-column="49" />
               <folding>
                 <element signature="n#div#3;n#body#0;n#html#0;n#!!top" />
               </folding>
@@ -138,6 +47,40 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/css/people-detail.css">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="216">
+              <caret line="57" column="22" lean-forward="true" selection-start-line="57" selection-start-column="22" selection-end-line="57" selection-end-column="22" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/recommend1.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-396" />
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/supervision.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="2">
+              <caret line="14" column="32" selection-start-line="14" selection-start-column="32" selection-end-line="14" selection-end-column="32" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/suggest.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1140">
+              <caret line="60" column="22" selection-start-line="60" selection-start-column="22" selection-end-line="60" selection-end-column="22" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/index.html">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="539">
@@ -200,9 +143,9 @@
         <option value="$PROJECT_DIR$/header.html" />
         <option value="$PROJECT_DIR$/js/recommend.js" />
         <option value="$PROJECT_DIR$/people-list.html" />
-        <option value="$PROJECT_DIR$/css/people-detail.css" />
         <option value="$PROJECT_DIR$/js/suggest.js" />
         <option value="$PROJECT_DIR$/people-detail.html" />
+        <option value="$PROJECT_DIR$/css/people-detail.css" />
       </list>
     </option>
   </component>
@@ -275,7 +218,7 @@
       <workItem from="1555152651709" duration="7697000" />
       <workItem from="1555219473762" duration="564000" />
       <workItem from="1555300559146" duration="11117000" />
-      <workItem from="1555477774606" duration="751000" />
+      <workItem from="1555477774606" duration="1144000" />
     </task>
     <task id="LOCAL-00001" summary="页面">
       <created>1555127414740</created>
@@ -291,11 +234,25 @@
       <option name="project" value="LOCAL" />
       <updated>1555127463489</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Merge branch 'master' of https://github.com/guoling1/qiuxian&#10;&#10;# Conflicts:&#10;#&#9;.idea/workspace.xml">
+      <created>1555481145438</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1555481145438</updated>
+    </task>
+    <task id="LOCAL-00004" summary="Merge branch 'master' of https://github.com/guoling1/qiuxian&#10;&#10;# Conflicts:&#10;#&#9;.idea/workspace.xml">
+      <created>1555481323618</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1555481323618</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="44642000" />
+    <option name="totallyTimeSpent" value="45035000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
@@ -312,7 +269,7 @@
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Version Control" order="8" />
+      <window_info anchor="bottom" id="Version Control" order="8" visible="true" weight="0.329718" />
       <window_info anchor="bottom" id="Terminal" order="9" />
       <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
@@ -325,7 +282,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="页面" />
-    <option name="LAST_COMMIT_MESSAGE" value="页面" />
+    <MESSAGE value="Merge branch 'master' of https://github.com/guoling1/qiuxian&#10;&#10;# Conflicts:&#10;#&#9;.idea/workspace.xml" />
+    <option name="LAST_COMMIT_MESSAGE" value="Merge branch 'master' of https://github.com/guoling1/qiuxian&#10;&#10;# Conflicts:&#10;#&#9;.idea/workspace.xml" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/reservation.html" />
@@ -408,13 +366,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/supervision.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="266">
-          <caret line="14" column="32" selection-start-line="14" selection-start-column="32" selection-end-line="14" selection-end-column="32" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/news-detail.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="554">
@@ -423,9 +374,6 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/public-new.html" />
-    <entry file="file://$PROJECT_DIR$/recommend1.html">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/css/public.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="221">
@@ -450,13 +398,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state>
           <caret column="40" selection-start-column="16" selection-end-column="40" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/css/people-detail.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="323">
-          <caret line="79" column="18" selection-start-line="79" selection-start-column="18" selection-end-line="79" selection-end-column="18" />
         </state>
       </provider>
     </entry>
@@ -499,13 +440,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/suggest.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="140">
-          <caret line="60" column="22" selection-start-line="60" selection-start-column="22" selection-end-line="60" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/css/index.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="350">
@@ -527,10 +461,29 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/recommend1.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-396" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/supervision.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2">
+          <caret line="14" column="32" selection-start-line="14" selection-start-column="32" selection-end-line="14" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/suggest.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1140">
+          <caret line="60" column="22" selection-start-line="60" selection-start-column="22" selection-end-line="60" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/people-detail.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="121">
-          <caret line="78" column="13" selection-start-line="78" selection-start-column="13" selection-end-line="78" selection-end-column="13" />
+        <state relative-caret-position="150">
+          <caret line="10" column="49" lean-forward="true" selection-start-line="10" selection-start-column="49" selection-end-line="10" selection-end-column="49" />
           <folding>
             <element signature="n#div#3;n#body#0;n#html#0;n#!!top" />
           </folding>
@@ -541,6 +494,13 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="539">
           <caret line="25" column="31" lean-forward="true" selection-start-line="25" selection-start-column="31" selection-end-line="25" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/css/people-detail.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="216">
+          <caret line="57" column="22" lean-forward="true" selection-start-line="57" selection-start-column="22" selection-end-line="57" selection-end-column="22" />
         </state>
       </provider>
     </entry>
