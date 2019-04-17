@@ -76,7 +76,7 @@ $('.submit').click(function () {
 
     }
 })
-
+var verifyCode = new GVerify(imgCode);
 $("#input").on("blur",function () {
     var inputCode = $("#input").val();
     if(verifyCode.validate($("#input").val())){
