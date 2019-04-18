@@ -65,8 +65,9 @@
     width: 6.1rem;
     border-bottom: 1px solid #d2d2d2;
 }*/
-.form textarea{
-    margin-top: 0.2rem;
+textarea{
+    display: block;
+    margin: 0.2rem auto 0;
     padding: 0.2rem;
     width: 6.5rem;
     height: 1.95rem;
@@ -86,7 +87,7 @@
     line-height: 0.6rem;
     color: #7d0000;
 }
-.form button{
+ button{
     display: inherit;
     margin: 0.38rem auto;
     width: 2.08rem;

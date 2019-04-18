@@ -15,13 +15,13 @@
 <div class="column-title clear">
     <span class="left">监督评议 | supervision</span>
 </div>
-<div class="title-group">
-    <div class="finish">01.述廉报告真实性</div>
+<div class="title-group" id="title-group">
+    <!--<div class="finish">01.述廉报告真实性</div>
     <div class="active">02.遵守党的记录情况</div>
     <div>03.廉洁自律情况</div>
     <div>04.遵守八项规定及纠改“四风”情况</div>
     <div>05.履行“一岗双责”情况</div>
-    <div>06.履行党风廉政建设主体责任监督责任总体情况</div>
+    <div>06.履行党风廉政建设主体责任监督责任总体情况</div>-->
 </div>
 <div class="form">
     <div class="list date">
@@ -32,21 +32,9 @@
             <option value="">不真实</option>
         </select>
     </div>
-    <div class="list code">
-        <p>一二三四：</p>
-        <select name="" id="">
-            <option value="">选择部门</option>
-        </select>
-    </div>
-    <div class="list code">
-        <p>一二：</p>
-        <select name="" id="">
-            <option value="">选择部门</option>
-        </select>
-    </div>
-    <textarea name="" id="" cols="30" rows="10" placeholder="意见和建议"></textarea>
-    <button class="submit">提 交</button>
 </div>
+<!--<textarea name="" id="" cols="30" rows="10" placeholder="意见和建议"></textarea>-->
+<button class="submit">下一项</button>
 </div>
 <script src="js/rem.js"></script>
 <script src="js/swiper-4.3.3.min.js"></script>
@@ -54,7 +42,191 @@
 <script src="js/public.js"></script>
 <!--<script src="js/index.js"></script>-->
 <script>
+    var submitData = []
+    var selectActive = 0;
+    var titleGroup = document.getElementById('title-group');
     $('.column-title .left').html($.Request('type'));
+    //获取选项列表
+    $.ajax({
+        type: "POST",
+        dataType: "json",
+        url: GLOBEL_URl,
+        data: {
+            oper: 'getSupervisionList',
+            id: '5591BBA5-D321-4D24-ABE5-56DDC2F98797'
+        },
+        success: function (data) {
+            for (var i = 0; i < data.data.length; i++) {
+                var list = document.createElement('div');
+                list.innerHTML = '0' + (i + 1) + '.' + data.data[i].TestContent;
+                if (i == 0) {
+                    list.className = 'active';
+                }
+                list.setAttribute('id', data.data[i].TestBankId);
+                list.setAttribute('name', data.data[i].TestContent);
+                list.setAttribute('data', JSON.stringify(data.data[i].OptionContent));
+                titleGroup.appendChild(list)
+            }
+            getPeople(data.data[0].OptionContent)
+        }
+    })
+
+    //获取人员
+    function getPeople(selectData) {
+        $.ajax({
+            type: "POST",
+            dataType: "json",
+            url: GLOBEL_URl,
+            data: {
+                oper: 'getMemberList',
+                type: 1,
+                companyid: $.Request('id'),
+                pageSize: 50,
+                pageIndex: 1
+            },
+            success: function (data) {
+                var form = document.getElementsByClassName('form')[0];
+                form.innerHTML = ''
+                for (var i = 0; i < data.data.length; i++) {
+                    var list = document.createElement('div');
+                    list.className = 'list';
+                    var p = document.createElement('p');
+                    p.innerHTML = data.data[i].RealName + '：';
+                    var select = document.createElement('select');
+                    select.setAttribute('memberid', data.data[i].MemberId)
+                    var op = document.createElement('option');
+                    op.innerHTML = '请选择';
+                    op.value = '';
+                    select.appendChild(op)
+                    for (var j = 0; j < selectData.length; j++) {
+                        var option = document.createElement('option');
+                        option.innerHTML = selectData[j].c;
+                        option.value = selectData[j].c;
+                        select.appendChild(option)
+                    }
+                    list.appendChild(p)
+                    list.appendChild(select)
+                    form.appendChild(list);
+                    var con = {
+                        oper: 'addSupervision',
+                        type: 1,
+                        memberid: data.data[i].MemberId,
+                        companyid: '',
+                        openid: 'oXQlD5uqC92zyzRlThaOl_o5Y3m0',
+                        other: '',
+                        content: [{
+                            TestBankId: titleGroup.getElementsByTagName('div')[selectActive].getAttribute('id'),
+                            TestContent: titleGroup.getElementsByTagName('div')[selectActive].getAttribute('name'),
+                            OptionContent: []
+                        }]
+                    }
+                    for (var j = 0; j < selectData.length; j++) {
+                        selectData[j].e = '';
+                        selectData[j].v = false;
+                    }
+
+                    if (submitData.length != 0) {
+                        for (var k = 0; k < submitData.length; k++) {
+                            if (submitData[k].memberid == con.memberid) {
+                                submitData[k].content.push({
+                                    TestBankId: titleGroup.getElementsByTagName('div')[selectActive].getAttribute('id'),
+                                    TestContent: titleGroup.getElementsByTagName('div')[selectActive].getAttribute('name'),
+                                    OptionContent: selectData
+                                })
+                            } else {
+                                con.content.OptionContent = selectData
+                            }
+                        }
+                    } else {
+                        con.content[0].OptionContent = [].concat(selectData)
+                        submitData.push(con)
+                    }
+                }
+            }
+        })
+    }
+
+
+    $('.submit').click(function () {
+        console.log(submitData)
+        var list = document.getElementsByTagName('select');
+        for (var i = 0; i < list.length; i++) {
+            if ($(list[i]).children('option:selected').val() != '') {
+                for (var j = 0; j < submitData.length; j++) {
+                    if (list[i].getAttribute('memberid') == submitData[j].memberid) {
+                        for (var k = 0; k < submitData[j].content.length; k++) {
+                            console.log(selectActive)
+                            if (submitData[j].content[k].TestContent == titleGroup.getElementsByTagName('div')[selectActive].getAttribute('name')) {
+                                for (var m = 0; m < submitData[j].content[k].OptionContent.length; m++) {
+                                    console.log($(list[i]).children('option:selected').val())
+                                    if (submitData[j].content[k].OptionContent[m].c == $(list[i]).children('option:selected').val()) {
+                                        submitData[j].content[k].OptionContent[m].v = 'true';
+                                        /*if($(list[i]).next().hasClass('none')){
+
+                                        }else {
+                                            if($(list[i]).next().val()!=''){
+                                                selectData[j].OptionContent[k].e=$(list[i]).next().val()
+                                            }else {
+                                                alert('请填写完整内容')
+                                                return
+                                            }
+                                        }*/
+                                    }
+                                }
+
+                            }
+
+                        }
+                    }
+
+                }
+            } else {
+                alert('请填写完整内容')
+                return
+            }
+        }
+        var titleList = titleGroup.getElementsByTagName('div');
+        if ((selectActive + 1) != titleList.length) {
+            selectActive++;
+            for (var i = 0; i < titleList.length; i++) {
+                if (i < selectActive) {
+                    titleList[i].className = 'finish'
+                } else if (i == selectActive) {
+                    titleList[i].className = 'active'
+                } else {
+                    titleList[i].className = ''
+                }
+            }
+            if (selectActive == (titleList.length - 1)) {
+                $('.submit').html('提交')
+            }
+            getPeople(JSON.parse(titleList[selectActive].getAttribute('data')))
+        } else {
+            console.log(submitData)
+            var flagNum=0
+            for(var i=0;i<submitData.length;i++){
+                $.ajax({
+                    type: "POST",
+                    dataType: "json",
+                    url: GLOBEL_URl,
+                    data: {
+                        oper: 'addSupervision',
+                        memberid: submitData[i].memberid,
+                        openid: submitData[i].openid,
+                        content: JSON.stringify(submitData[i].content),
+                        other: ''
+                    },
+                    success: function (data) {
+                        flagNum++;
+                        if(flagNum==submitData.length){
+                            alert('提交成功')
+                        }
+                    }
+                })
+            }
+
+        }
+    })
 </script>
 </body>
 </html>
