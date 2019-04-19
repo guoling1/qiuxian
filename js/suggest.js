@@ -2,7 +2,7 @@
 var current;
 var pageSize = 10;
 //请求当前页要展示的数据
-$.ajax({
+/*$.ajax({
     type: "POST",
     dataType: "json",
     url: GLOBEL_URl,
@@ -49,7 +49,7 @@ $.ajax({
             }
         });
     }
-})
+})*/
 var flag=false
 //提交留言
 $('.submit').click(function () {

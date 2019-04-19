@@ -47,6 +47,10 @@ $('.submit').click(function () {
             window.location.href = "supervision.html?id="+$("#companyList").val()+"&companyType="+$("#companyType").val()+"&type="+$.Request('type');
         }else if($.Request('type')=='干部推荐'){
             window.location.href = "recommend1.html?id="+$("#companyList").val()+"&companyType="+$("#companyType").val()+"&type="+$.Request('type');
+        }else if($.Request('type')=='干部考核'){
+            window.location.href = "select1.html?id="+$("#companyList").val()+"&companyType="+$("#companyType").val()+"&type="+$.Request('type');
+        }else if($.Request('type')=='班子考核'){
+            window.location.href = "select.html?id="+$("#companyList").val()+"&companyType="+$("#companyType").val()+"&type="+$.Request('type');
         }
 
     }

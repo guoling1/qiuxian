@@ -1,0 +1,104 @@
+.bread{
+    padding: 0 0.3rem;
+    line-height: 0.66rem;
+    font-weight: bold;
+}
+.people{
+    padding-bottom: 0.46rem;
+    text-align: center;
+    font-size: 0.28rem;
+    line-height: 0.6rem;
+    color: #010101;
+    border-bottom: 0.2rem solid #f0f3f8;
+}
+.people .name{
+    margin-top: 0.4rem;
+    font-size: 0.32rem;
+    font-weight: 900;
+    line-height: 0.32rem;
+}
+.people .name1 span{
+    position: relative;
+    display: inline-block;
+    padding-bottom: 0.22rem;
+    font-size: 0.2rem;
+    color: #666666;
+    line-height: 0.24rem;
+    border-bottom: 1px solid #d8d8d8;
+}
+.people .name1 span i{
+    position: absolute;
+    bottom: -1px;
+    left: 35%;
+    display: inline-block;
+    width: 30%;
+    height: 1px;
+    background: #000;
+}
+.people .avatar{
+    margin: 0.38rem auto;
+    width: 2.7rem;
+    height: 3.2rem;
+}
+
+
+.form{
+    margin: 0 auto;
+    width: 6.9rem;
+    font-weight: bold;
+}
+.form .list{
+    margin-top: 0.2rem;
+}
+.form p{
+    display: inline-block;
+    line-height: 0.64rem;
+    font-size: 0.28rem;
+    color: #666;
+    text-align: right;
+    width: 1.9rem;
+}
+.form .right{
+
+}
+/*.form input,.form textarea{
+    padding: 0 0.4rem;
+    height: 0.74rem;
+    line-height: 0.74rem;
+    width: 6.1rem;
+    border-bottom: 1px solid #d2d2d2;
+}*/
+.form textarea{
+    margin-top: 0.2rem;
+    padding: 0.2rem;
+    width: 6.5rem;
+    height: 1.95rem;
+    border: 1px solid #d2d2d2;
+    border-radius: 0.05rem;
+}
+.form textarea.none{
+    display: none;
+}
+.form select{
+    padding: 0 0.4rem 0 0.6rem;
+    width: 4rem;
+    height: 0.62rem;
+    line-height: 0.62rem;
+    border: 1px solid #d2d2d2;
+    border-radius: 0.05rem;
+    margin: 0 auto;
+}
+.tips{
+    padding: 0.2rem 0.3rem 0;
+    line-height: 0.6rem;
+    color: #7d0000;
+}
+button{
+    display: inherit;
+    margin: 0.38rem auto;
+    width: 2.08rem;
+    line-height: 0.56rem;
+    background: #015293;
+    border-radius: 3px;
+    color: #fff;
+}
