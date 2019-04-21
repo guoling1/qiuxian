@@ -54,7 +54,7 @@
                     url: GLOBEL_URl,
                     data: {
                         oper: 'addRecommend',
-                        openid:'oXQlD5uqC92zyzRlThaOl_o5Y3m0',
+                        openid:OPENID,
                         companyid: $.Request('id'),
                         name: $("#name").val(),
                         position: $("#position").val(),
@@ -63,6 +63,9 @@
                     dataType: "json",
                     success: function (data) {
                         alert(data.msg)
+                        if(data.msg=='推荐成功'){
+                            location.reload()
+                        }
                     }
                 })
 

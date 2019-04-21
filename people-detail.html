@@ -160,21 +160,23 @@
                 return
             }
         }
-        console.log(JSON.stringify(selectData))
         $.ajax({
             type: "POST",
             dataType: "json",
             url: GLOBEL_URl,
             data: {
                 oper: 'addSupervision',
+                type:3,
                 memberid: $.Request('MemberId'),
-                openid: 'oXQlD5uqC92zyzRlThaOl_o5Y3m0',
+                openid: OPENID,
                 content: JSON.stringify(selectData),
                 other: $('.other').val()
             },
             success: function (data) {
                 alert(data.msg)
-                location.reload()
+                if(data.msg=='提交成功'){
+                    location.reload()
+                }
             }
         })
 

@@ -71,12 +71,15 @@ $('.submit').click(function () {
                 url: GLOBEL_URl,
                 data: {
                     oper: 'addFeedback',
-                    openidcontent:'oXQlD5uqC92zyzRlThaOl_o5Y3m0',
+                    openid:OPENID,
                     content: $("#content").val(),
                 },
                 dataType : "json",
                 success: function (data) {
                     alert(data.msg)
+                    if(data.msg=='提交成功'){
+                        location.reload()
+                    }
                 }
             })
         }
