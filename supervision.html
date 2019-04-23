@@ -15,6 +15,7 @@
 <div class="column-title clear">
     <span class="left">监督评议 | supervision</span>
 </div>
+<div class="bread">乡镇街道评议入口 &gt; 新马头镇</div>
 <div class="title-group" id="title-group">
     <!--<div class="finish">01.述廉报告真实性</div>
     <div class="active">02.遵守党的记录情况</div>
@@ -39,6 +40,7 @@
 <script src="js/rem.js"></script>
 <script src="js/swiper-4.3.3.min.js"></script>
 <script src="js/jquery-3.3.1.min.js"></script>
+<script src="js/wxpublic.js"></script>
 <script src="js/public.js"></script>
 <!--<script src="js/index.js"></script>-->
 <script>
@@ -47,6 +49,7 @@
     var selectActive = 0;
     var titleGroup = document.getElementById('title-group');
     $('.column-title .left').html($.Request('type'));
+    $('.bread').html($.Request('companyName')+'评议入口 &gt; '+$.Request('companyName1'));
     //获取选项列表
     $.ajax({
         type: "POST",

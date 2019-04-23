@@ -11,7 +11,7 @@ $(".footerPage").load("footer.html",function (result) {
 
 var GLOBEL_URl = "http://qxzzb.hdjincheng.cn/Ajax/cms.ashx";
 var GLOBEL_IP = "http://qxzzb.hdjincheng.cn";
-var OPENID='oXQlD5uqC92zyzRlThaOl_o5Y3m0'
+var OPENID=_GET_DATA('wxopenid');
 //获取url参数
 $.Request = function (name) {
     var reg = new RegExp("(^|&)" + name + "=([^&]*)(&|$)", "i");

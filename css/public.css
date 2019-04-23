@@ -232,3 +232,8 @@
     margin-right: 0.3rem;
     color: #fff;
 }
+.bread{
+    padding: 0 0.3rem;
+    line-height: 0.66rem;
+    font-weight: bold;
+}

@@ -15,6 +15,7 @@
 <div class="column-title clear">
     <span class="left">干部推荐 | recommend</span>
 </div>
+<div class="bread">乡镇街道评议入口 &gt; 新马头镇</div>
 <div class="form">
     <div class="list date">
         <p>姓名（必填）:</p>
@@ -41,10 +42,12 @@
 <script src="js/rem.js"></script>
 <script src="js/swiper-4.3.3.min.js"></script>
 <script src="js/jquery-3.3.1.min.js"></script>
+<script src="js/wxpublic.js"></script>
 <script src="js/public.js"></script>
 <!--<script src="js/index.js"></script>-->
 <script>
     $('.column-title .left').html($.Request('type'));
+    $('.bread').html($.Request('companyName')+'推荐入口 &gt; '+$.Request('companyName1'));
     $('.submit').click(function () {
         if ($("#name").val() == ''||$("#position").val()==''||$("#reason").val()=='') {
             alert("请填写完整内容")
