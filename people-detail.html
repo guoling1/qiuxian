@@ -38,7 +38,7 @@
         </div>-->
     </div>
 
-    <div class="tips">*注：提交（每个物理地址每季度只允许评价一次，评价结果只有管理员可看，选择选择存在、严重、较差的请列举情况。）</div>
+    <!--<div class="tips">*注：提交（每个物理地址每季度只允许评价一次，评价结果只有管理员可看，选择选择存在、严重、较差的请列举情况。）</div>-->
     <textarea name="" id="" cols="30" rows="10" class="other" placeholder="需要反应的其他问题"></textarea>
     <button class="submit">确  认</button>
 </div>
@@ -48,6 +48,7 @@
 <script src="js/jquery-3.3.1.min.js"></script>
 <script src="js/public.js"></script>
 <script>
+    $('.bread').html($.Request('companyName')+'评议入口 &gt; '+$.Request('companyName1'))
     //获取人员信息
     $.ajax({
         type: "POST",

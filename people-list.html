@@ -42,6 +42,7 @@
 <script src="js/pagination.js"></script>
 <script>
     $('.column-title .left').html($.Request('type'));
+    $('.bread').html($.Request('companyName')+'评议入口 &gt; '+$.Request('companyName1'))
     //获取当前页码
     var current;
     var pageSize = 20;
@@ -85,7 +86,7 @@
                             $(data.data).each(function (ind, item) {
                                 aLi += `
                                         <li>
-                                            <a href="people-detail.html?MemberId=`+item.MemberId+`&id=`+$.Request('id')+`">
+                                            <a href="people-detail.html?MemberId=`+item.MemberId+`&id=`+$.Request('id')+`&companyName=`+$.Request('companyName')+`&companyName1=`+$.Request('companyName1')+`">
                                                 <img src="`+GLOBEL_IP+item.PhotoUrl+`" alt="">
                                                 <p class="name">`+item.RealName+`</p>
                                                 <p class="year"></p>

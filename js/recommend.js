@@ -13,9 +13,12 @@ $.ajax({
         })
     }
 })
+var companyName=''
+var companyName1=''
 //选择完分类后获取单位列表
 $('#companyType').change(function(){
     var data= $(this).val();
+    companyName= $("#companyType option:selected").text();
     $.ajax({
         type: "POST",
         dataType: "json",
@@ -38,11 +41,12 @@ $('#companyType').change(function(){
 
 
 $('.submit').click(function () {
+    companyName1 = $("#companyList option:selected").text()
     if($("#companyType").val()==0||$("#companyList").val()==0){
         alert("请填写完整信息")
     }else {
         if($.Request('type')=='监督评议'){
-            window.location.href = "people-list.html?id="+$("#companyList").val()+"&companyType="+$("#companyType").val()+"&type="+$.Request('type');
+            window.location.href = "people-list.html?id="+$("#companyList").val()+"&companyType="+$("#companyType").val()+"&type="+$.Request('type')+'&companyName='+companyName+'&companyName1='+companyName1;
         }else if($.Request('type')=='考核评议'){
             window.location.href = "supervision.html?id="+$("#companyList").val()+"&companyType="+$("#companyType").val()+"&type="+$.Request('type');
         }else if($.Request('type')=='干部推荐'){
