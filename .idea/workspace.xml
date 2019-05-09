@@ -2,23 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="18cab75a-bfd3-4baf-aac0-070501a525b3" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/js/wxpublic.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/css/public.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/public.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/introduce.html" beforeDir="false" afterPath="$PROJECT_DIR$/introduce.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/js/public.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/public.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/js/recommend.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/recommend.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/news-detail.html" beforeDir="false" afterPath="$PROJECT_DIR$/news-detail.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/news-list.html" beforeDir="false" afterPath="$PROJECT_DIR$/news-list.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/people-detail.html" beforeDir="false" afterPath="$PROJECT_DIR$/people-detail.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/people-list.html" beforeDir="false" afterPath="$PROJECT_DIR$/people-list.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/recommend.html" beforeDir="false" afterPath="$PROJECT_DIR$/recommend.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/recommend1.html" beforeDir="false" afterPath="$PROJECT_DIR$/recommend1.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/select.html" beforeDir="false" afterPath="$PROJECT_DIR$/select.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/select1.html" beforeDir="false" afterPath="$PROJECT_DIR$/select1.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/suggest.html" beforeDir="false" afterPath="$PROJECT_DIR$/suggest.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/supervision.html" beforeDir="false" afterPath="$PROJECT_DIR$/supervision.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/supervision.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/supervision.css" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -31,29 +16,41 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/supervision.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="290">
-              <caret line="17" selection-start-line="17" selection-end-line="17" selection-end-column="43" />
+            <state relative-caret-position="246">
+              <caret line="36" column="66" lean-forward="true" selection-start-line="36" selection-start-column="66" selection-end-line="36" selection-end-column="66" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/js/recommend.js">
+        <entry file="file://$PROJECT_DIR$/css/supervision.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="466">
-              <caret line="52" column="205" selection-start-line="52" selection-start-column="205" selection-end-line="52" selection-end-column="205" />
+            <state relative-caret-position="950">
+              <caret line="68" column="19" selection-start-line="68" selection-start-column="19" selection-end-line="68" selection-end-column="19" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/recommend1.html">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/select1.html">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="374">
-              <caret line="49" column="49" selection-start-line="49" selection-start-column="49" selection-end-line="49" selection-end-column="49" />
+              <caret line="17" column="43" selection-start-line="17" selection-start-column="43" selection-end-line="17" selection-end-column="43" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/people-detail.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="902">
+              <caret line="48" column="38" selection-start-line="48" selection-start-column="38" selection-end-line="48" selection-end-column="38" />
+              <folding>
+                <element signature="n#div#3;n#body#0;n#html#0;n#!!top" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -61,8 +58,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/select.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="242">
-              <caret line="43" column="86" selection-start-line="43" selection-start-column="86" selection-end-line="43" selection-end-column="86" />
+            <state relative-caret-position="398">
+              <caret line="138" column="19" lean-forward="true" selection-start-line="138" selection-start-column="19" selection-end-line="138" selection-end-column="19" />
             </state>
           </provider>
         </entry>
@@ -70,7 +67,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/people-list.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="198">
+            <state relative-caret-position="660">
               <caret line="45" column="86" lean-forward="true" selection-start-line="45" selection-start-column="4" selection-end-line="45" selection-end-column="86" />
               <folding>
                 <element signature="n#ul#0;n#body#0;n#html#0;n#!!top" />
@@ -81,19 +78,19 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/css/people-list.css">
+        <entry file="file://$PROJECT_DIR$/introduce.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="576">
-              <caret line="30" selection-start-line="30" selection-end-line="34" selection-end-column="1" />
+            <state relative-caret-position="726">
+              <caret line="33" column="46" lean-forward="true" selection-start-line="33" selection-start-column="46" selection-end-line="34" selection-end-column="38" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/introduce.html">
+        <entry file="file://$PROJECT_DIR$/recommend.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="598">
-              <caret line="33" column="46" lean-forward="true" selection-start-line="33" selection-start-column="46" selection-end-line="34" selection-end-column="38" />
+            <state relative-caret-position="792">
+              <caret line="36" column="24" selection-start-line="36" selection-start-column="24" selection-end-line="36" selection-end-column="24" />
             </state>
           </provider>
         </entry>
@@ -101,17 +98,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/news-detail.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="180">
+            <state relative-caret-position="594">
               <caret line="27" column="38" selection-start-line="27" selection-start-column="38" selection-end-line="27" selection-end-column="38" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/css/public.css">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="686">
-              <caret line="238" column="1" selection-start-line="238" selection-start-column="1" selection-end-line="238" selection-end-column="1" />
             </state>
           </provider>
         </entry>
@@ -119,7 +107,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="598">
+            <state relative-caret-position="1562">
               <caret line="71" column="38" lean-forward="true" selection-start-line="71" selection-start-column="38" selection-end-line="71" selection-end-column="38" />
             </state>
           </provider>
@@ -151,11 +139,15 @@
       <find>conso</find>
       <find>console</find>
       <find>提交</find>
+      <find>单位</find>
+      <find>单位总</find>
+      <find>.form p</find>
     </findStrings>
     <replaceStrings>
       <replace>邱县干部日常考核平台</replace>
     </replaceStrings>
     <dirStrings>
+      <dir>D:\product\qiuxian\js</dir>
       <dir>D:\product\qiuxian</dir>
     </dirStrings>
   </component>
@@ -176,7 +168,6 @@
         <option value="$PROJECT_DIR$/1" />
         <option value="$PROJECT_DIR$/js/header.js" />
         <option value="$PROJECT_DIR$/css/people-detail.css" />
-        <option value="$PROJECT_DIR$/css/supervision.css" />
         <option value="$PROJECT_DIR$/css/select1.css" />
         <option value="$PROJECT_DIR$/js/index.js" />
         <option value="$PROJECT_DIR$/js/suggest.js" />
@@ -189,19 +180,20 @@
         <option value="$PROJECT_DIR$/recommend.html" />
         <option value="$PROJECT_DIR$/suggest.html" />
         <option value="$PROJECT_DIR$/people-list.html" />
-        <option value="$PROJECT_DIR$/supervision.html" />
         <option value="$PROJECT_DIR$/css/public.css" />
         <option value="$PROJECT_DIR$/js/recommend.js" />
         <option value="$PROJECT_DIR$/select1.html" />
         <option value="$PROJECT_DIR$/select.html" />
         <option value="$PROJECT_DIR$/index.html" />
         <option value="$PROJECT_DIR$/recommend1.html" />
+        <option value="$PROJECT_DIR$/css/supervision.css" />
+        <option value="$PROJECT_DIR$/supervision.html" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="581" />
-    <option name="y" value="62" />
+    <option name="x" value="572" />
+    <option name="y" value="21" />
     <option name="width" value="1279" />
     <option name="height" value="1002" />
   </component>
@@ -222,11 +214,6 @@
               <item name="qiuxian" type="b2602c69:ProjectViewProjectNode" />
               <item name="qiuxian" type="462c0819:PsiDirectoryNode" />
               <item name="css" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="qiuxian" type="b2602c69:ProjectViewProjectNode" />
-              <item name="qiuxian" type="462c0819:PsiDirectoryNode" />
-              <item name="js" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -287,7 +274,8 @@
       <workItem from="1555661234626" duration="741000" />
       <workItem from="1555811017456" duration="8890000" />
       <workItem from="1555981667181" duration="1064000" />
-      <workItem from="1555990232832" duration="1255000" />
+      <workItem from="1555990232832" duration="1500000" />
+      <workItem from="1556005665121" duration="924000" />
     </task>
     <task id="LOCAL-00001" summary="页面">
       <created>1555127414740</created>
@@ -352,15 +340,21 @@
       <option name="project" value="LOCAL" />
       <updated>1555982709137</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="接口">
+      <created>1555999801690</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1555999801690</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="83331000" />
+    <option name="totallyTimeSpent" value="84500000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="581" y="62" width="1279" height="1002" extended-state="0" />
-    <editor active="true" />
+    <frame x="581" y="62" width="1279" height="1002" extended-state="1" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.16116035" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
@@ -458,13 +452,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/css/supervision.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1298">
-          <caret line="68" column="19" selection-start-line="68" selection-start-column="19" selection-end-line="68" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/1" />
     <entry file="file://$PROJECT_DIR$/css/people-detail.css">
       <provider selected="true" editor-type-id="text-editor">
@@ -525,27 +512,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/people-detail.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="312">
-          <caret line="48" column="38" selection-start-line="48" selection-start-column="38" selection-end-line="48" selection-end-column="38" />
-          <folding>
-            <element signature="n#div#3;n#body#0;n#html#0;n#!!top" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/suggest.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="358">
           <caret line="58" column="38" selection-start-line="58" selection-start-column="38" selection-end-line="58" selection-end-column="38" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/recommend.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="642">
-          <caret line="36" column="24" selection-start-line="36" selection-start-column="24" selection-end-line="36" selection-end-column="24" />
         </state>
       </provider>
     </entry>
@@ -563,23 +533,40 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/supervision.html">
+    <entry file="file://$PROJECT_DIR$/js/recommend.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="290">
-          <caret line="17" selection-start-line="17" selection-end-line="17" selection-end-column="43" />
+        <state relative-caret-position="1144">
+          <caret line="52" column="205" selection-start-line="52" selection-start-column="205" selection-end-line="52" selection-end-column="205" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/recommend1.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1034">
+          <caret line="47" column="8" lean-forward="true" selection-start-line="47" selection-start-column="8" selection-end-line="47" selection-end-column="8" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/select1.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="226">
+        <state relative-caret-position="374">
           <caret line="17" column="43" selection-start-line="17" selection-start-column="43" selection-end-line="17" selection-end-column="43" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/people-detail.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="902">
+          <caret line="48" column="38" selection-start-line="48" selection-start-column="38" selection-end-line="48" selection-end-column="38" />
+          <folding>
+            <element signature="n#div#3;n#body#0;n#html#0;n#!!top" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/people-list.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="198">
+        <state relative-caret-position="660">
           <caret line="45" column="86" lean-forward="true" selection-start-line="45" selection-start-column="4" selection-end-line="45" selection-end-column="86" />
           <folding>
             <element signature="n#ul#0;n#body#0;n#html#0;n#!!top" />
@@ -588,45 +575,52 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/select.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="242">
-          <caret line="43" column="86" selection-start-line="43" selection-start-column="86" selection-end-line="43" selection-end-column="86" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="598">
-          <caret line="71" column="38" lean-forward="true" selection-start-line="71" selection-start-column="38" selection-end-line="71" selection-end-column="38" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/introduce.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="598">
+        <state relative-caret-position="726">
           <caret line="33" column="46" lean-forward="true" selection-start-line="33" selection-start-column="46" selection-end-line="34" selection-end-column="38" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/recommend.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="792">
+          <caret line="36" column="24" selection-start-line="36" selection-start-column="24" selection-end-line="36" selection-end-column="24" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/news-detail.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
+        <state relative-caret-position="594">
           <caret line="27" column="38" selection-start-line="27" selection-start-column="38" selection-end-line="27" selection-end-column="38" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/js/recommend.js">
+    <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="466">
-          <caret line="52" column="205" selection-start-line="52" selection-start-column="205" selection-end-line="52" selection-end-column="205" />
+        <state relative-caret-position="1562">
+          <caret line="71" column="38" lean-forward="true" selection-start-line="71" selection-start-column="38" selection-end-line="71" selection-end-column="38" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/recommend1.html">
+    <entry file="file://$PROJECT_DIR$/select.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="374">
-          <caret line="49" column="49" selection-start-line="49" selection-start-column="49" selection-end-line="49" selection-end-column="49" />
+        <state relative-caret-position="398">
+          <caret line="138" column="19" lean-forward="true" selection-start-line="138" selection-start-column="19" selection-end-line="138" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/css/supervision.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="950">
+          <caret line="68" column="19" selection-start-line="68" selection-start-column="19" selection-end-line="68" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/supervision.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="246">
+          <caret line="36" column="66" lean-forward="true" selection-start-line="36" selection-start-column="66" selection-end-line="36" selection-end-column="66" />
         </state>
       </provider>
     </entry>
