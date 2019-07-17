@@ -9,6 +9,7 @@ $(".footerPage").load("footer.html",function (result) {
     $.get('js/footer.js');
 });
 
+
 var GLOBEL_URl = "http://qxzzb.hdjincheng.cn/Ajax/cms.ashx";
 var GLOBEL_IP = "http://qxzzb.hdjincheng.cn";
 var OPENID=_GET_DATA('wxopenid');

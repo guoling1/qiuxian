@@ -12,6 +12,32 @@
 </head>
 <body>
 <div class="headerPage"></div>
+<div class="head-box">
+    <div class="menu-box" id="menu-box">
+        <ul>
+            <li id="监督评议">
+                <a href="recommend.html?type=监督评议">
+                    <p>监督评议</p>
+                    <p>SUPERVISION</p>
+                </a>
+            </li>
+            <li id="考核评议">
+                <a href="recommend.html?type=考核评议">
+                    <p>考核评议</p>
+                    <p>ASSESSMENT</p>
+                </a>
+            </li>
+            <li style="border: none">
+                <a href="suggest.html">
+                    <p>建&nbsp;议&nbsp;箱</p>
+                    <p>SUGGESTION</p>
+                </a>
+            </li>
+            <li></li>
+            <li></li>
+        </ul>
+    </div>
+</div>
 <div class="column-title clear">
     <span class="left">干部推荐 | recommend</span>
 </div>
@@ -35,5 +61,12 @@
 <script src="js/wxpublic.js"></script>
 <script src="js/public.js"></script>
 <script src="js/recommend.js"></script>
+<script>
+    if($.Request('type')=='监督评议'){
+        $('#监督评议').addClass('active');
+    }else if($.Request('type')=='考核评议'){
+        $('#考核评议').addClass('active');
+    }
+</script>
 </body>
 </html>

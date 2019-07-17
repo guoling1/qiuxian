@@ -1,4 +1,5 @@
 $('.column-title .left').html($.Request('type'));
+
 //获取单位分类
 $.ajax({
     type: "POST",
@@ -48,7 +49,8 @@ $('.submit').click(function () {
         if($.Request('type')=='监督评议'){
             window.location.href = "people-list.html?id="+$("#companyList").val()+"&companyType="+$("#companyType").val()+"&type="+$.Request('type')+'&companyName='+companyName+'&companyName1='+companyName1;
         }else if($.Request('type')=='考核评议'){
-            window.location.href = "supervision.html?id="+$("#companyList").val()+"&companyType="+$("#companyType").val()+"&type="+$.Request('type')+'&companyName='+companyName+'&companyName1='+companyName1;
+            // window.location.href = "supervision.html?id="+$("#companyList").val()+"&companyType="+$("#companyType").val()+"&type="+$.Request('type')+'&companyName='+companyName+'&companyName1='+companyName1;
+            window.location.href = "select.html?id="+$("#companyList").val()+"&companyType="+$("#companyType").val()+"&type="+$.Request('type')+'&companyName='+companyName+'&companyName1='+companyName1;
         }else if($.Request('type')=='干部推荐'){
             window.location.href = "recommend1.html?id="+$("#companyList").val()+"&companyType="+$("#companyType").val()+"&type="+$.Request('type')+'&companyName='+companyName+'&companyName1='+companyName1;
         }else if($.Request('type')=='干部考核'){
