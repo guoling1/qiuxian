@@ -31,10 +31,9 @@ $('#companyType').change(function(){
             pageIndex: 1
         },
         success: function (data) {
+            $("#companyList").html('<option value="0">选择部门</option>')
             $(data.data).each(function (ind, item) {
-                $(data.data).each(function (ind, item) {
-                    $("#companyList").append("<option value='"+item.CompanyId+"'>"+item.FullName+"</option>");
-                })
+                $("#companyList").append("<option value='"+item.CompanyId+"'>"+item.FullName+"</option>");
             })
         }
     })
