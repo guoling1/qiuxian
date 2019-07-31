@@ -27,7 +27,7 @@ $('#companyType').change(function(){
         data: {
             oper: 'getCompanyList',
             companytypeid: data,
-            pageSize: 4,
+            pageSize: 60,
             pageIndex: 1
         },
         success: function (data) {
