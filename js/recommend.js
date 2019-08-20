@@ -38,6 +38,33 @@ $('#companyType').change(function(){
         }
     })
 });
+$('#companyList').change(function(){
+    var data= $(this).val();
+    companyName= $("#companyList option:selected").text();
+    $.ajax({
+        type: "POST",
+        dataType: "json",
+        url: GLOBEL_URl,
+        data: {
+            oper: 'getCompanySonList',
+            parentid: data,
+            pageSize: 60,
+            pageIndex: 1
+        },
+        success: function (data) {
+            if(data.data.length){
+                $("#companySon").show()
+                $("#companySon").html('<option value="0">选择下级</option>')
+                $(data.data).each(function (ind, item) {
+                    $("#companySon").append("<option value='"+item.CompanyId+"'>"+item.FullName+"</option>");
+                })
+            }else {
+                $("#companySon").hide()
+            }
+
+        }
+    })
+});
 
 
 $('.submit').click(function () {
@@ -45,8 +72,10 @@ $('.submit').click(function () {
     if($("#companyType").val()==0||$("#companyList").val()==0){
         alert("请填写完整信息")
     }else {
-        if($.Request('type')=='监督评议'){
+        if($.Request('type')=='监督评议'&&($("#companySon").css('display')!='block')){
             window.location.href = "people-list.html?id="+$("#companyList").val()+"&companyType="+$("#companyType").val()+"&type="+$.Request('type')+'&companyName='+companyName+'&companyName1='+companyName1;
+        }else if($.Request('type')=='监督评议'&&($("#companySon").css('display')=='block')){
+            window.location.href = "people-list1.html?id="+$("#companySon").val()+"&companyType="+$("#companyType").val()+"&type="+$.Request('type')+'&companyName='+companyName+'&companyName1='+companyName1;
         }else if($.Request('type')=='考核评议'){
             // window.location.href = "supervision.html?id="+$("#companyList").val()+"&companyType="+$("#companyType").val()+"&type="+$.Request('type')+'&companyName='+companyName+'&companyName1='+companyName1;
             window.location.href = "select.html?id="+$("#companyList").val()+"&companyType="+$("#companyType").val()+"&type="+$.Request('type')+'&companyName='+companyName+'&companyName1='+companyName1;

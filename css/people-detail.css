@@ -49,14 +49,16 @@
 }
 .form .list{
     margin-top: 0.2rem;
+    /*padding-bottom: 0.2rem;*/
+    /*border-bottom: 1px solid #dddddd;*/
 }
 .form p{
     display: inline-block;
     line-height: 0.64rem;
     font-size: 0.28rem;
     color: #666;
-    text-align: right;
-    width: 1.9rem;
+    /*text-align: right;*/
+    /*width: 1.9rem;*/
 }
 .form .right{
 
@@ -86,7 +88,8 @@
     line-height: 0.62rem;
     border: 1px solid #d2d2d2;
     border-radius: 0.05rem;
-    margin: 0 auto;
+    /*margin: 0 auto;*/
+    /*display: block;*/
 }
 .form .tips{
     line-height: 0.6rem;

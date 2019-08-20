@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>邱县干部日常考核平台</title>
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/swiper-4.3.3.min.css">
+    <link rel="stylesheet" href="css/pagination.css">
+    <link rel="stylesheet" href="css/public.css">
+    <link rel="stylesheet" href="css/people-list.css">
+</head>
+<body>
+<div class="headerPage"></div>
+<div class="head-box">
+    <div class="menu-box" id="menu-box">
+        <ul>
+            <li class="active">
+                <a href="recommend.html?type=监督评议">
+                    <p>监督评议</p>
+                    <p>SUPERVISION</p>
+                </a>
+            </li>
+            <li>
+                <a href="recommend.html?type=考核评议">
+                    <p>考核评议</p>
+                    <p>ASSESSMENT</p>
+                </a>
+            </li>
+            <li style="border: none">
+                <a href="suggest.html">
+                    <p>建&nbsp;议&nbsp;箱</p>
+                    <p>SUGGESTION</p>
+                </a>
+            </li>
+            <li></li>
+            <li></li>
+        </ul>
+    </div>
+</div>
+<div class="column-title clear">
+    <span class="left">监督评议 | supervision</span>
+</div>
+<div class="bread">乡镇街道评议入口 &gt; 新马头镇</div>
+<ul class="peoples">
+
+</ul>
+<div id="page"></div>
+
+<script src="js/rem.js"></script>
+<script src="js/jquery-3.3.1.min.js"></script>
+<script src="js/swiper-4.3.3.min.js"></script>
+<script src="js/wxpublic.js"></script>
+<script src="js/public.js"></script>
+<script src="js/pagination.js"></script>
+<script>
+    $('.column-title .left').html($.Request('type'));
+    $('.bread').html($.Request('companyName')+'评议入口 &gt; '+$.Request('companyName1'));
+    //获取当前页码
+    var current;
+    var pageSize = 20;
+    //请求当前页要展示的数据
+    $.ajax({
+        type: "POST",
+        dataType: "json",
+        url: GLOBEL_URl,
+        data: {
+            oper: 'getMemberList',
+            type: 5,
+            companyid: $.Request('id'),
+            pageSize: pageSize,
+            pageIndex: 1
+        },
+        success: function (data) {
+            current = data.recordCount;
+            var arr = [];
+            for (var i = 0; i < current; i++) {
+                arr.push(i)
+            }
+            $('#page').pagination({
+                dataSource: arr,
+                pageSize: pageSize,
+                prevText: '<上一页',
+                nextText: '下一页>',
+                callback: function () {
+                    $.ajax({
+                        type: "POST",
+                        dataType: "json",
+                        url: GLOBEL_URl,
+                        data: {
+                            oper: 'getMemberList',
+                            type: 5,
+                            companyid: $.Request('id'),
+                            pageSize: pageSize,
+                            pageIndex: arguments[1].pageNumber
+                        },
+                        success: function (data) {
+                            var aLi = '';
+                            $(data.data).each(function (ind, item) {
+                                if(item.SupervisionVillage==1){
+                                    aLi += `
+                                        <li>
+                                            <a href="people-detail1.html?MemberId=`+item.MemberId+`&id=`+$.Request('id')+`&companyName=`+$.Request('companyName')+`&companyName1=`+$.Request('companyName1')+`">
+                                                <img src="`+GLOBEL_IP+item.PhotoUrl+`" alt="">
+                                                <p class="name">`+item.RealName+`</p>
+                                                <p class="year"></p>
+                                            </a>
+                                        </li>
+                                `
+                                }else {
+                                    aLi += `
+                                        <li>
+                                            <a href="people-detail.html?MemberId=`+item.MemberId+`&id=`+$.Request('id')+`&companyName=`+$.Request('companyName')+`&companyName1=`+$.Request('companyName1')+`">
+                                                <img src="`+GLOBEL_IP+item.PhotoUrl+`" alt="">
+                                                <p class="name">`+item.RealName+`</p>
+                                                <p class="year"></p>
+                                            </a>
+                                        </li>
+                                `
+                                }
+
+                            })
+                            $('.peoples').html(aLi)
+                        }
+                    })
+                }
+            });
+        }
+    })
+</script>
+</body>
+</html>

@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>邱县干部日常考核平台</title>
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/swiper-4.3.3.min.css">
+    <link rel="stylesheet" href="css/public.css">
+    <link rel="stylesheet" href="css/people-detail.css">
+</head>
+<body>
+<div class="headerPage"></div>
+<div class="head-box">
+    <div class="menu-box" id="menu-box">
+        <ul>
+            <li class="active">
+                <a href="recommend.html?type=监督评议">
+                    <p>监督评议</p>
+                    <p>SUPERVISION</p>
+                </a>
+            </li>
+            <li>
+                <a href="recommend.html?type=考核评议">
+                    <p>考核评议</p>
+                    <p>ASSESSMENT</p>
+                </a>
+            </li>
+            <li style="border: none">
+                <a href="suggest.html">
+                    <p>建&nbsp;议&nbsp;箱</p>
+                    <p>SUGGESTION</p>
+                </a>
+            </li>
+            <li></li>
+            <li></li>
+        </ul>
+    </div>
+</div>
+<div class="column-title clear">
+    <span class="left">监督评议 | supervision</span>
+</div>
+<div class="bread">乡镇街道评议入口 &gt; 新马头镇</div>
+<div class="people">
+    <p class="name"></p>
+    <!--<div class="name1"><span>镇长<i></i></span></div>-->
+    <img src="" alt="" class="avatar">
+    <p class="position"></p>
+    <p class="responsibility"></p>
+    <p class="achievement"></p>
+</div>
+<div class="form">
+    <div class="selectGroup">
+        <!--<div class="list">
+            <p>政治素质：</p>
+            <select name="">
+                <option value="">高</option>
+                <option value="">较高</option>
+                <option value="">一般</option>
+                <option value="">较差</option>
+            </select>
+            <textarea name="" id="" cols="30" rows="10" placeholder="具体情况"></textarea>
+        </div>-->
+    </div>
+
+    <!--<div class="tips">*注：提交（每个物理地址每季度只允许评价一次，评价结果只有管理员可看，选择选择存在、严重、较差的请列举情况。）</div>-->
+    <textarea name="" id="" cols="30" rows="10" class="other" placeholder="需要反应的其他问题"></textarea>
+    <button class="submit">确  认</button>
+</div>
+</div>
+<script src="js/rem.js"></script>
+<script src="js/swiper-4.3.3.min.js"></script>
+<script src="js/jquery-3.3.1.min.js"></script>
+<script src="js/wxpublic.js"></script>
+<script src="js/public.js"></script>
+<script>
+    $('.bread').html($.Request('companyName')+'评议入口 &gt; '+$.Request('companyName1'))
+    //获取人员信息
+    $.ajax({
+        type: "POST",
+        dataType: "json",
+        url: GLOBEL_URl,
+        data: {
+            oper: 'getMember',
+            memberid: $.Request('MemberId')
+        },
+        success: function (data) {
+            $('.name').html(data.data.RealName)
+            $('.avatar').attr('src',GLOBEL_IP+data.data.PhotoUrl)
+            $('.position').html('职     务：'+data.data.Position)
+            $('.responsibility').html('分管情况：'+data.data.Responsibility)
+            $('.achievement').html('工作实绩：'+data.data.Achievement)
+        }
+    })
+
+    var selectData =[]
+    //获取选择列表
+    $.ajax({
+        type: "POST",
+        dataType: "json",
+        url: GLOBEL_URl,
+        data: {
+            oper: 'getSupervisionList',
+            id:'0B2ADB87-CD6C-4920-842C-6252396B0166'
+        },
+        success: function (data) {
+            selectData = data.data;
+            var selectGroup = document.getElementsByClassName('selectGroup')[0];
+            for (var i=0;i<data.data.length;i++){
+                var list = document.createElement('div');
+                list.className='list';
+                var p = document.createElement('p');
+                p.innerHTML=data.data[i].TestContent+'：';
+                var select = document.createElement('select');
+                select.setAttribute('data-id',data.data[i].TestBankId)
+                var op = document.createElement('option');
+                op.innerHTML = '请选择';
+                op.value='';
+                // option.setAttribute('flag',data.data[i].OptionContent[j].e)
+                select.appendChild(op)
+                for(var j=0;j<data.data[i].OptionContent.length;j++){
+                    var option = document.createElement('option');
+                    option.innerHTML = data.data[i].OptionContent[j].c;
+                    option.value=data.data[i].OptionContent[j].c;
+                    option.setAttribute('flag',data.data[i].OptionContent[j].e)
+                    select.appendChild(option)
+                }
+                var textarea = document.createElement('textarea');
+                textarea.className="none"
+                textarea.setAttribute('placeholder','具体情况')
+                list.appendChild(p)
+                list.appendChild(select)
+                list.appendChild(textarea)
+                selectGroup.appendChild(list)
+            }
+
+            var selectList = document.getElementsByTagName('select');
+
+            for(var i=0;i<selectList.length;i++){
+                (selectList[i].onchange=function () {
+                    if($(this).children('option:selected').attr('flag')=='true'){
+                        $(this).next().removeClass('none')
+                    }else {
+                        $(this).next().addClass('none')
+                        $(this).next().val('')
+                    }
+                })(i)
+            }
+        }
+    })
+
+
+    $('.submit').click(function () {
+        var list = document.getElementsByTagName('select');
+
+        for (var i=0;i<selectData.length;i++){
+            for (var j=0;j<selectData[i].OptionContent.length;j++){
+                selectData[i].OptionContent[j].e=''
+                selectData[i].OptionContent[j].v='false'
+            }
+        }
+
+        for(var i=0;i<list.length;i++){
+            if($(list[i]).children('option:selected').val()!=''){
+                for(var j=0;j<selectData.length;j++){
+                    if(list[i].getAttribute('data-id')==selectData[j].TestBankId){
+                        for(var k=0;k<selectData[j].OptionContent.length;k++){
+                            if(selectData[j].OptionContent[k].c==$(list[i]).children('option:selected').val()){
+                                selectData[j].OptionContent[k].v='true';
+                                if($(list[i]).next().hasClass('none')){
+
+                                }else {
+                                    if($(list[i]).next().val()!=''){
+                                        selectData[j].OptionContent[k].e=$(list[i]).next().val()
+                                    }else {
+                                        alert('请填写完整内容')
+                                        return
+                                    }
+                                }
+                            }
+                        }
+                    }
+
+                }
+            }else {
+                alert('请填写完整内容')
+                return
+            }
+        }
+        $.ajax({
+            type: "POST",
+            dataType: "json",
+            url: GLOBEL_URl,
+            data: {
+                oper: 'addSupervision',
+                type:5,
+                memberid: $.Request('MemberId'),
+                openid: OPENID,
+                content: JSON.stringify(selectData),
+                other: $('.other').val()
+            },
+            success: function (data) {
+                alert(data.msg)
+                if(data.msg=='提交成功'){
+                    location.reload()
+                }
+            }
+        })
+
+    })
+</script>
+</body>
+</html>
