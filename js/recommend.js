@@ -16,6 +16,7 @@ $.ajax({
 })
 var companyName=''
 var companyName1=''
+var companyName2=''
 //选择完分类后获取单位列表
 $('#companyType').change(function(){
     var data= $(this).val();
@@ -40,7 +41,7 @@ $('#companyType').change(function(){
 });
 $('#companyList').change(function(){
     var data= $(this).val();
-    companyName= $("#companyList option:selected").text();
+    companyName1= $("#companyList option:selected").text();
     $.ajax({
         type: "POST",
         dataType: "json",
@@ -68,14 +69,14 @@ $('#companyList').change(function(){
 
 
 $('.submit').click(function () {
-    companyName1 = $("#companyList option:selected").text()
+    companyName2 = $("#companySon option:selected").text()
     if($("#companyType").val()==0||$("#companyList").val()==0){
         alert("请填写完整信息")
     }else {
         if($.Request('type')=='监督评议'&&($("#companySon").css('display')!='block')){
             window.location.href = "people-list.html?id="+$("#companyList").val()+"&companyType="+$("#companyType").val()+"&type="+$.Request('type')+'&companyName='+companyName+'&companyName1='+companyName1;
         }else if($.Request('type')=='监督评议'&&($("#companySon").css('display')=='block')){
-            window.location.href = "people-list1.html?id="+$("#companySon").val()+"&companyType="+$("#companyType").val()+"&type="+$.Request('type')+'&companyName='+companyName+'&companyName1='+companyName1;
+            window.location.href = "people-list1.html?id="+$("#companySon").val()+"&companyType="+$("#companyType").val()+"&type="+$.Request('type')+'&companyName='+companyName+'&companyName1='+companyName1+'&companyName2='+companyName2;
         }else if($.Request('type')=='考核评议'){
             // window.location.href = "supervision.html?id="+$("#companyList").val()+"&companyType="+$("#companyType").val()+"&type="+$.Request('type')+'&companyName='+companyName+'&companyName1='+companyName1;
             window.location.href = "select.html?id="+$("#companyList").val()+"&companyType="+$("#companyType").val()+"&type="+$.Request('type')+'&companyName='+companyName+'&companyName1='+companyName1;
