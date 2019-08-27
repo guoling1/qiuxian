@@ -10,10 +10,74 @@ $.ajax({
     },
     success: function (data) {
         $(data.data).each(function (ind, item) {
-            $("#companyType").append("<option value='"+item.CompanyTypeId+"'>"+item.Name+"</option>");
+            if(item.CompanyTypeId==$.Request('companyType')){
+                $("#companyType").append("<option value='"+item.CompanyTypeId+"' selected='selected'>"+item.Name+"</option>");
+                getList(item.CompanyTypeId)
+            }else {
+                $("#companyType").append("<option value='"+item.CompanyTypeId+"'>"+item.Name+"</option>");
+            }
+
         })
     }
 })
+function getList(val) {
+    $.ajax({
+        type: "POST",
+        dataType: "json",
+        url: GLOBEL_URl,
+        data: {
+            oper: 'getCompanyList',
+            companytypeid: val,
+            pageSize: 60,
+            pageIndex: 1
+        },
+        success: function (data) {
+            $("#companyList").html('<option value="0">选择部门</option>')
+            $(data.data).each(function (ind, item) {
+                if(item.CompanyId==$.Request('companyList')) {
+                    $("#companyList").append("<option value='" + item.CompanyId + "' selected='selected'>" + item.FullName + "</option>");
+                    // if($.Request('companySon')){
+                        getSon(item.CompanyId)
+                    // }
+                    $("#companySon").show();
+                }else {
+                    $("#companyList").append("<option value='" + item.CompanyId + "'>" + item.FullName + "</option>");
+                }
+            })
+        }
+    })
+}
+function getSon(val) {
+    $.ajax({
+        type: "POST",
+        dataType: "json",
+        url: GLOBEL_URl,
+        data: {
+            oper: 'getCompanySonList',
+            parentid: val,
+            pageSize: 60,
+            pageIndex: 1
+        },
+        success: function (data) {
+            if(data.data.length){
+                $("#companySon").show();
+
+                $("#companySon").html('<option value="0">选择下级</option>')
+                $(data.data).each(function (ind, item) {
+                    if(item.CompanyId==$.Request('companySon')){
+                        $("#companySon").append("<option value='"+item.CompanyId+"' selected>"+item.FullName+"</option>");
+                    }else {
+                        $("#companySon").append("<option value='"+item.CompanyId+"'>"+item.FullName+"</option>");
+                    }
+
+                })
+            }else {
+                $("#companySon").hide()
+            }
+
+        }
+    })
+}
 var companyName=''
 var companyName1=''
 var companyName2=''
@@ -69,6 +133,8 @@ $('#companyList').change(function(){
 
 
 $('.submit').click(function () {
+    companyName= $("#companyType option:selected").text();
+    companyName1= $("#companyList option:selected").text();
     companyName2 = $("#companySon option:selected").text()
     if($("#companyType").val()==0||$("#companyList").val()==0){
         alert("请填写完整信息")
